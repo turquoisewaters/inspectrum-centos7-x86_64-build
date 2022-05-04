@@ -1,5 +1,6 @@
 # inspectrum-centos7-x86_64-build
 
+```bash
 Install centos-7 2009
 
 Setup developer enviroment
@@ -72,3 +73,4 @@ copy all files in my-root to another machine
 point LD_LIBRARY_PATH to this folder
 execute inspectrum
 
+```
