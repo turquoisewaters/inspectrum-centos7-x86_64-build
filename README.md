@@ -73,4 +73,7 @@ copy all files in my-root to another machine
 point LD_LIBRARY_PATH to this folder
 execute inspectrum
 
+Add start_inspectrum.sh to the bin folder and running this should edit the
+LD_LIBRARY_PATH and start inspectrum
+
 ```
