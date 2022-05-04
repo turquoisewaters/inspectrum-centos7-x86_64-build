@@ -1,0 +1,2282 @@
+Below is a complete cut and paste of termial when building.
+I have removed some commands that were not relavent to the build
+
+[user@localhost ~]$ sudo yum groupinstall "development tools"
+Loaded plugins: fastestmirror, langpacks
+There is no installed groups file.
+Maybe run: yum groups mark convert (see man yum)
+Loading mirror speeds from cached hostfile
+ * base: mirror.pit.teraswitch.com
+ * extras: mirror.pit.teraswitch.com
+ * updates: mirror.pit.teraswitch.com
+Resolving Dependencies
+--> Running transaction check
+---> Package autoconf.noarch 0:2.69-11.el7 will be installed
+--> Processing Dependency: m4 >= 1.4.14 for package: autoconf-2.69-11.el7.noarch
+--> Processing Dependency: perl(Data::Dumper) for package: autoconf-2.69-11.el7.noarch
+---> Package automake.noarch 0:1.13.4-3.el7 will be installed
+--> Processing Dependency: perl(Thread::Queue) for package: automake-1.13.4-3.el7.noarch
+--> Processing Dependency: perl(TAP::Parser) for package: automake-1.13.4-3.el7.noarch
+---> Package bison.x86_64 0:3.0.4-2.el7 will be installed
+---> Package byacc.x86_64 0:1.9.20130304-3.el7 will be installed
+---> Package cscope.x86_64 0:15.8-10.el7 will be installed
+---> Package ctags.x86_64 0:5.8-13.el7 will be installed
+---> Package diffstat.x86_64 0:1.57-4.el7 will be installed
+---> Package doxygen.x86_64 1:1.8.5-4.el7 will be installed
+---> Package flex.x86_64 0:2.5.37-6.el7 will be installed
+---> Package gcc.x86_64 0:4.8.5-44.el7 will be installed
+--> Processing Dependency: cpp = 4.8.5-44.el7 for package: gcc-4.8.5-44.el7.x86_64
+--> Processing Dependency: glibc-devel >= 2.2.90-12 for package: gcc-4.8.5-44.el7.x86_64
+---> Package gcc-c++.x86_64 0:4.8.5-44.el7 will be installed
+--> Processing Dependency: libstdc++-devel = 4.8.5-44.el7 for package: gcc-c++-4.8.5-44.el7.x86_64
+---> Package gcc-gfortran.x86_64 0:4.8.5-44.el7 will be installed
+--> Processing Dependency: libquadmath-devel = 4.8.5-44.el7 for package: gcc-gfortran-4.8.5-44.el7.x86_64
+--> Processing Dependency: libquadmath = 4.8.5-44.el7 for package: gcc-gfortran-4.8.5-44.el7.x86_64
+--> Processing Dependency: libgfortran = 4.8.5-44.el7 for package: gcc-gfortran-4.8.5-44.el7.x86_64
+--> Processing Dependency: libgfortran.so.3()(64bit) for package: gcc-gfortran-4.8.5-44.el7.x86_64
+---> Package git.x86_64 0:1.8.3.1-23.el7_8 will be installed
+--> Processing Dependency: perl-Git = 1.8.3.1-23.el7_8 for package: git-1.8.3.1-23.el7_8.x86_64
+--> Processing Dependency: perl(Term::ReadKey) for package: git-1.8.3.1-23.el7_8.x86_64
+--> Processing Dependency: perl(Git) for package: git-1.8.3.1-23.el7_8.x86_64
+--> Processing Dependency: perl(Error) for package: git-1.8.3.1-23.el7_8.x86_64
+---> Package indent.x86_64 0:2.2.11-13.el7 will be installed
+---> Package intltool.noarch 0:0.50.2-7.el7 will be installed
+--> Processing Dependency: perl(XML::Parser) for package: intltool-0.50.2-7.el7.noarch
+--> Processing Dependency: gettext-devel for package: intltool-0.50.2-7.el7.noarch
+---> Package libtool.x86_64 0:2.4.2-22.el7_3 will be installed
+---> Package patch.x86_64 0:2.7.1-12.el7_7 will be installed
+---> Package patchutils.x86_64 0:0.3.3-5.el7_9 will be installed
+---> Package rcs.x86_64 0:5.9.0-7.el7 will be installed
+---> Package redhat-rpm-config.noarch 0:9.1.0-88.el7.centos will be installed
+--> Processing Dependency: dwz >= 0.4 for package: redhat-rpm-config-9.1.0-88.el7.centos.noarch
+--> Processing Dependency: python-srpm-macros for package: redhat-rpm-config-9.1.0-88.el7.centos.noarch
+--> Processing Dependency: perl-srpm-macros for package: redhat-rpm-config-9.1.0-88.el7.centos.noarch
+---> Package rpm-build.x86_64 0:4.11.3-48.el7_9 will be installed
+---> Package rpm-sign.x86_64 0:4.11.3-48.el7_9 will be installed
+---> Package subversion.x86_64 0:1.7.14-16.el7 will be installed
+--> Processing Dependency: subversion-libs(x86-64) = 1.7.14-16.el7 for package: subversion-1.7.14-16.el7.x86_64
+--> Processing Dependency: libsvn_wc-1.so.0()(64bit) for package: subversion-1.7.14-16.el7.x86_64
+--> Processing Dependency: libsvn_subr-1.so.0()(64bit) for package: subversion-1.7.14-16.el7.x86_64
+--> Processing Dependency: libsvn_repos-1.so.0()(64bit) for package: subversion-1.7.14-16.el7.x86_64
+--> Processing Dependency: libsvn_ra_svn-1.so.0()(64bit) for package: subversion-1.7.14-16.el7.x86_64
+--> Processing Dependency: libsvn_ra_neon-1.so.0()(64bit) for package: subversion-1.7.14-16.el7.x86_64
+--> Processing Dependency: libsvn_ra_local-1.so.0()(64bit) for package: subversion-1.7.14-16.el7.x86_64
+--> Processing Dependency: libsvn_ra-1.so.0()(64bit) for package: subversion-1.7.14-16.el7.x86_64
+--> Processing Dependency: libsvn_fs_util-1.so.0()(64bit) for package: subversion-1.7.14-16.el7.x86_64
+--> Processing Dependency: libsvn_fs_fs-1.so.0()(64bit) for package: subversion-1.7.14-16.el7.x86_64
+--> Processing Dependency: libsvn_fs_base-1.so.0()(64bit) for package: subversion-1.7.14-16.el7.x86_64
+--> Processing Dependency: libsvn_fs-1.so.0()(64bit) for package: subversion-1.7.14-16.el7.x86_64
+--> Processing Dependency: libsvn_diff-1.so.0()(64bit) for package: subversion-1.7.14-16.el7.x86_64
+--> Processing Dependency: libsvn_delta-1.so.0()(64bit) for package: subversion-1.7.14-16.el7.x86_64
+--> Processing Dependency: libsvn_client-1.so.0()(64bit) for package: subversion-1.7.14-16.el7.x86_64
+--> Processing Dependency: libaprutil-1.so.0()(64bit) for package: subversion-1.7.14-16.el7.x86_64
+--> Processing Dependency: libapr-1.so.0()(64bit) for package: subversion-1.7.14-16.el7.x86_64
+---> Package swig.x86_64 0:2.0.10-5.el7 will be installed
+---> Package systemtap.x86_64 0:4.0-13.el7 will be installed
+--> Processing Dependency: systemtap-devel = 4.0-13.el7 for package: systemtap-4.0-13.el7.x86_64
+--> Processing Dependency: systemtap-client = 4.0-13.el7 for package: systemtap-4.0-13.el7.x86_64
+--> Running transaction check
+---> Package apr.x86_64 0:1.4.8-7.el7 will be installed
+---> Package apr-util.x86_64 0:1.5.2-6.el7 will be installed
+---> Package cpp.x86_64 0:4.8.5-44.el7 will be installed
+---> Package dwz.x86_64 0:0.11-3.el7 will be installed
+---> Package gettext-devel.x86_64 0:0.19.8.1-3.el7 will be installed
+--> Processing Dependency: gettext-common-devel = 0.19.8.1-3.el7 for package: gettext-devel-0.19.8.1-3.el7.x86_64
+---> Package glibc-devel.x86_64 0:2.17-325.el7_9 will be installed
+--> Processing Dependency: glibc-headers = 2.17-325.el7_9 for package: glibc-devel-2.17-325.el7_9.x86_64
+--> Processing Dependency: glibc-headers for package: glibc-devel-2.17-325.el7_9.x86_64
+---> Package libgfortran.x86_64 0:4.8.5-44.el7 will be installed
+---> Package libquadmath.x86_64 0:4.8.5-44.el7 will be installed
+---> Package libquadmath-devel.x86_64 0:4.8.5-44.el7 will be installed
+---> Package libstdc++-devel.x86_64 0:4.8.5-44.el7 will be installed
+---> Package m4.x86_64 0:1.4.16-10.el7 will be installed
+---> Package perl-Data-Dumper.x86_64 0:2.145-3.el7 will be installed
+---> Package perl-Error.noarch 1:0.17020-2.el7 will be installed
+---> Package perl-Git.noarch 0:1.8.3.1-23.el7_8 will be installed
+---> Package perl-TermReadKey.x86_64 0:2.30-20.el7 will be installed
+---> Package perl-Test-Harness.noarch 0:3.28-3.el7 will be installed
+---> Package perl-Thread-Queue.noarch 0:3.02-2.el7 will be installed
+---> Package perl-XML-Parser.x86_64 0:2.41-10.el7 will be installed
+---> Package perl-srpm-macros.noarch 0:1-8.el7 will be installed
+---> Package python-srpm-macros.noarch 0:3-34.el7 will be installed
+---> Package subversion-libs.x86_64 0:1.7.14-16.el7 will be installed
+---> Package systemtap-client.x86_64 0:4.0-13.el7 will be installed
+---> Package systemtap-devel.x86_64 0:4.0-13.el7 will be installed
+--> Processing Dependency: kernel-devel-uname-r for package: systemtap-devel-4.0-13.el7.x86_64
+--> Running transaction check
+---> Package gettext-common-devel.noarch 0:0.19.8.1-3.el7 will be installed
+---> Package glibc-headers.x86_64 0:2.17-325.el7_9 will be installed
+--> Processing Dependency: kernel-headers >= 2.2.1 for package: glibc-headers-2.17-325.el7_9.x86_64
+--> Processing Dependency: kernel-headers for package: glibc-headers-2.17-325.el7_9.x86_64
+---> Package kernel-debug-devel.x86_64 0:3.10.0-1160.62.1.el7 will be installed
+--> Running transaction check
+---> Package kernel-headers.x86_64 0:3.10.0-1160.62.1.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+=========================================================================================================
+ Package                        Arch             Version                         Repository         Size
+=========================================================================================================
+Installing for group install "Development Tools":
+ autoconf                       noarch           2.69-11.el7                     base              701 k
+ automake                       noarch           1.13.4-3.el7                    base              679 k
+ bison                          x86_64           3.0.4-2.el7                     base              674 k
+ byacc                          x86_64           1.9.20130304-3.el7              base               65 k
+ cscope                         x86_64           15.8-10.el7                     base              203 k
+ ctags                          x86_64           5.8-13.el7                      base              155 k
+ diffstat                       x86_64           1.57-4.el7                      base               35 k
+ doxygen                        x86_64           1:1.8.5-4.el7                   base              3.6 M
+ flex                           x86_64           2.5.37-6.el7                    base              293 k
+ gcc                            x86_64           4.8.5-44.el7                    base               16 M
+ gcc-c++                        x86_64           4.8.5-44.el7                    base              7.2 M
+ gcc-gfortran                   x86_64           4.8.5-44.el7                    base              6.7 M
+ git                            x86_64           1.8.3.1-23.el7_8                base              4.4 M
+ indent                         x86_64           2.2.11-13.el7                   base              150 k
+ intltool                       noarch           0.50.2-7.el7                    base               59 k
+ libtool                        x86_64           2.4.2-22.el7_3                  base              588 k
+ patch                          x86_64           2.7.1-12.el7_7                  base              111 k
+ patchutils                     x86_64           0.3.3-5.el7_9                   updates           104 k
+ rcs                            x86_64           5.9.0-7.el7                     base              230 k
+ redhat-rpm-config              noarch           9.1.0-88.el7.centos             base               81 k
+ rpm-build                      x86_64           4.11.3-48.el7_9                 updates           150 k
+ rpm-sign                       x86_64           4.11.3-48.el7_9                 updates            49 k
+ subversion                     x86_64           1.7.14-16.el7                   base              1.0 M
+ swig                           x86_64           2.0.10-5.el7                    base              1.3 M
+ systemtap                      x86_64           4.0-13.el7                      base               15 k
+Installing for dependencies:
+ apr                            x86_64           1.4.8-7.el7                     base              104 k
+ apr-util                       x86_64           1.5.2-6.el7                     base               92 k
+ cpp                            x86_64           4.8.5-44.el7                    base              5.9 M
+ dwz                            x86_64           0.11-3.el7                      base               99 k
+ gettext-common-devel           noarch           0.19.8.1-3.el7                  base              410 k
+ gettext-devel                  x86_64           0.19.8.1-3.el7                  base              320 k
+ glibc-devel                    x86_64           2.17-325.el7_9                  updates           1.1 M
+ glibc-headers                  x86_64           2.17-325.el7_9                  updates           691 k
+ kernel-debug-devel             x86_64           3.10.0-1160.62.1.el7            updates            18 M
+ kernel-headers                 x86_64           3.10.0-1160.62.1.el7            updates           9.1 M
+ libgfortran                    x86_64           4.8.5-44.el7                    base              301 k
+ libquadmath                    x86_64           4.8.5-44.el7                    base              190 k
+ libquadmath-devel              x86_64           4.8.5-44.el7                    base               54 k
+ libstdc++-devel                x86_64           4.8.5-44.el7                    base              1.5 M
+ m4                             x86_64           1.4.16-10.el7                   base              256 k
+ perl-Data-Dumper               x86_64           2.145-3.el7                     base               47 k
+ perl-Error                     noarch           1:0.17020-2.el7                 base               32 k
+ perl-Git                       noarch           1.8.3.1-23.el7_8                base               56 k
+ perl-TermReadKey               x86_64           2.30-20.el7                     base               31 k
+ perl-Test-Harness              noarch           3.28-3.el7                      base              302 k
+ perl-Thread-Queue              noarch           3.02-2.el7                      base               17 k
+ perl-XML-Parser                x86_64           2.41-10.el7                     base              223 k
+ perl-srpm-macros               noarch           1-8.el7                         base              4.6 k
+ python-srpm-macros             noarch           3-34.el7                        base              8.8 k
+ subversion-libs                x86_64           1.7.14-16.el7                   base              922 k
+ systemtap-client               x86_64           4.0-13.el7                      base              3.6 M
+ systemtap-devel                x86_64           4.0-13.el7                      base              2.2 M
+
+Transaction Summary
+=========================================================================================================
+Install  25 Packages (+27 Dependent packages)
+
+Total download size: 90 M
+Installed size: 223 M
+Is this ok [y/d/N]: y
+Downloading packages:
+warning: /var/cache/yum/x86_64/7/base/packages/apr-util-1.5.2-6.el7.x86_64.rpm: Header V3 RSA/SHA256 Signature, key ID f4a80eb5: NOKEY
+Public key for apr-util-1.5.2-6.el7.x86_64.rpm is not installed
+(1/52): apr-util-1.5.2-6.el7.x86_64.rpm                                           |  92 kB  00:00:00     
+(2/52): apr-1.4.8-7.el7.x86_64.rpm                                                | 104 kB  00:00:00     
+(3/52): automake-1.13.4-3.el7.noarch.rpm                                          | 679 kB  00:00:00     
+(4/52): autoconf-2.69-11.el7.noarch.rpm                                           | 701 kB  00:00:00     
+(5/52): bison-3.0.4-2.el7.x86_64.rpm                                              | 674 kB  00:00:00     
+(6/52): byacc-1.9.20130304-3.el7.x86_64.rpm                                       |  65 kB  00:00:00     
+(7/52): cscope-15.8-10.el7.x86_64.rpm                                             | 203 kB  00:00:00     
+(8/52): ctags-5.8-13.el7.x86_64.rpm                                               | 155 kB  00:00:00     
+(9/52): diffstat-1.57-4.el7.x86_64.rpm                                            |  35 kB  00:00:00     
+(10/52): doxygen-1.8.5-4.el7.x86_64.rpm                                           | 3.6 MB  00:00:00     
+(11/52): dwz-0.11-3.el7.x86_64.rpm                                                |  99 kB  00:00:00     
+(12/52): flex-2.5.37-6.el7.x86_64.rpm                                             | 293 kB  00:00:00     
+(13/52): cpp-4.8.5-44.el7.x86_64.rpm                                              | 5.9 MB  00:00:00     
+(14/52): gcc-c++-4.8.5-44.el7.x86_64.rpm                                          | 7.2 MB  00:00:01     
+(15/52): gcc-gfortran-4.8.5-44.el7.x86_64.rpm                                     | 6.7 MB  00:00:00     
+(16/52): gettext-common-devel-0.19.8.1-3.el7.noarch.rpm                           | 410 kB  00:00:00     
+(17/52): gettext-devel-0.19.8.1-3.el7.x86_64.rpm                                  | 320 kB  00:00:00     
+Public key for glibc-headers-2.17-325.el7_9.x86_64.rpm is not installed
+(18/52): glibc-headers-2.17-325.el7_9.x86_64.rpm                                  | 691 kB  00:00:00     
+(19/52): glibc-devel-2.17-325.el7_9.x86_64.rpm                                    | 1.1 MB  00:00:00     
+(20/52): gcc-4.8.5-44.el7.x86_64.rpm                                              |  16 MB  00:00:02     
+(21/52): indent-2.2.11-13.el7.x86_64.rpm                                          | 150 kB  00:00:00     
+(22/52): intltool-0.50.2-7.el7.noarch.rpm                                         |  59 kB  00:00:00     
+(23/52): libgfortran-4.8.5-44.el7.x86_64.rpm                                      | 301 kB  00:00:00     
+(24/52): libquadmath-4.8.5-44.el7.x86_64.rpm                                      | 190 kB  00:00:00     
+(25/52): libquadmath-devel-4.8.5-44.el7.x86_64.rpm                                |  54 kB  00:00:00     
+(26/52): libstdc++-devel-4.8.5-44.el7.x86_64.rpm                                  | 1.5 MB  00:00:00     
+(27/52): git-1.8.3.1-23.el7_8.x86_64.rpm                                          | 4.4 MB  00:00:01     
+(28/52): libtool-2.4.2-22.el7_3.x86_64.rpm                                        | 588 kB  00:00:00     
+(29/52): m4-1.4.16-10.el7.x86_64.rpm                                              | 256 kB  00:00:00     
+(30/52): patch-2.7.1-12.el7_7.x86_64.rpm                                          | 111 kB  00:00:00     
+(31/52): perl-Data-Dumper-2.145-3.el7.x86_64.rpm                                  |  47 kB  00:00:00     
+(32/52): perl-Error-0.17020-2.el7.noarch.rpm                                      |  32 kB  00:00:00     
+(33/52): perl-TermReadKey-2.30-20.el7.x86_64.rpm                                  |  31 kB  00:00:00     
+(34/52): perl-Test-Harness-3.28-3.el7.noarch.rpm                                  | 302 kB  00:00:00     
+(35/52): perl-Thread-Queue-3.02-2.el7.noarch.rpm                                  |  17 kB  00:00:00     
+(36/52): patchutils-0.3.3-5.el7_9.x86_64.rpm                                      | 104 kB  00:00:00     
+(37/52): perl-Git-1.8.3.1-23.el7_8.noarch.rpm                                     |  56 kB  00:00:00     
+(38/52): perl-XML-Parser-2.41-10.el7.x86_64.rpm                                   | 223 kB  00:00:00     
+(39/52): python-srpm-macros-3-34.el7.noarch.rpm                                   | 8.8 kB  00:00:00     
+(40/52): perl-srpm-macros-1-8.el7.noarch.rpm                                      | 4.6 kB  00:00:00     
+(41/52): rcs-5.9.0-7.el7.x86_64.rpm                                               | 230 kB  00:00:00     
+(42/52): redhat-rpm-config-9.1.0-88.el7.centos.noarch.rpm                         |  81 kB  00:00:00     
+(43/52): rpm-sign-4.11.3-48.el7_9.x86_64.rpm                                      |  49 kB  00:00:00     
+(44/52): subversion-libs-1.7.14-16.el7.x86_64.rpm                                 | 922 kB  00:00:00     
+(45/52): rpm-build-4.11.3-48.el7_9.x86_64.rpm                                     | 150 kB  00:00:00     
+(46/52): subversion-1.7.14-16.el7.x86_64.rpm                                      | 1.0 MB  00:00:00     
+(47/52): systemtap-4.0-13.el7.x86_64.rpm                                          |  15 kB  00:00:00     
+(48/52): kernel-headers-3.10.0-1160.62.1.el7.x86_64.rpm                           | 9.1 MB  00:00:01     
+(49/52): swig-2.0.10-5.el7.x86_64.rpm                                             | 1.3 MB  00:00:00     
+(50/52): kernel-debug-devel-3.10.0-1160.62.1.el7.x86_64.rpm                       |  18 MB  00:00:01     
+(51/52): systemtap-client-4.0-13.el7.x86_64.rpm                                   | 3.6 MB  00:00:00     
+(52/52): systemtap-devel-4.0-13.el7.x86_64.rpm                                    | 2.2 MB  00:00:00     
+---------------------------------------------------------------------------------------------------------
+Total                                                                     14 MB/s |  90 MB  00:00:06     
+Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+Importing GPG key 0xF4A80EB5:
+ Userid     : "CentOS-7 Key (CentOS 7 Official Signing Key) <security@centos.org>"
+ Fingerprint: 6341 ab27 53d7 8a78 a7c2 7bb1 24c6 a8a7 f4a8 0eb5
+ Package    : centos-release-7-9.2009.1.el7.centos.x86_64 (@updates)
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+Is this ok [y/N]: y
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : apr-1.4.8-7.el7.x86_64                                                               1/52 
+  Installing : libquadmath-4.8.5-44.el7.x86_64                                                      2/52 
+  Installing : m4-1.4.16-10.el7.x86_64                                                              3/52 
+  Installing : apr-util-1.5.2-6.el7.x86_64                                                          4/52 
+  Installing : 1:perl-Error-0.17020-2.el7.noarch                                                    5/52 
+  Installing : patch-2.7.1-12.el7_7.x86_64                                                          6/52 
+  Installing : perl-Thread-Queue-3.02-2.el7.noarch                                                  7/52 
+  Installing : subversion-libs-1.7.14-16.el7.x86_64                                                 8/52 
+  Installing : libgfortran-4.8.5-44.el7.x86_64                                                      9/52 
+  Installing : gettext-common-devel-0.19.8.1-3.el7.noarch                                          10/52 
+  Installing : python-srpm-macros-3-34.el7.noarch                                                  11/52 
+  Installing : libstdc++-devel-4.8.5-44.el7.x86_64                                                 12/52 
+  Installing : dwz-0.11-3.el7.x86_64                                                               13/52 
+  Installing : kernel-debug-devel-3.10.0-1160.62.1.el7.x86_64                                      14/52 
+  Installing : perl-Data-Dumper-2.145-3.el7.x86_64                                                 15/52 
+  Installing : autoconf-2.69-11.el7.noarch                                                         16/52 
+  Installing : perl-srpm-macros-1-8.el7.noarch                                                     17/52 
+  Installing : redhat-rpm-config-9.1.0-88.el7.centos.noarch                                        18/52 
+  Installing : cpp-4.8.5-44.el7.x86_64                                                             19/52 
+  Installing : perl-Test-Harness-3.28-3.el7.noarch                                                 20/52 
+  Installing : automake-1.13.4-3.el7.noarch                                                        21/52 
+  Installing : perl-TermReadKey-2.30-20.el7.x86_64                                                 22/52 
+  Installing : perl-Git-1.8.3.1-23.el7_8.noarch                                                    23/52 
+  Installing : git-1.8.3.1-23.el7_8.x86_64                                                         24/52 
+  Installing : gettext-devel-0.19.8.1-3.el7.x86_64                                                 25/52 
+  Installing : perl-XML-Parser-2.41-10.el7.x86_64                                                  26/52 
+  Installing : kernel-headers-3.10.0-1160.62.1.el7.x86_64                                          27/52 
+  Installing : glibc-headers-2.17-325.el7_9.x86_64                                                 28/52 
+  Installing : glibc-devel-2.17-325.el7_9.x86_64                                                   29/52 
+  Installing : gcc-4.8.5-44.el7.x86_64                                                             30/52 
+  Installing : systemtap-devel-4.0-13.el7.x86_64                                                   31/52 
+  Installing : systemtap-client-4.0-13.el7.x86_64                                                  32/52 
+  Installing : libquadmath-devel-4.8.5-44.el7.x86_64                                               33/52 
+  Installing : gcc-gfortran-4.8.5-44.el7.x86_64                                                    34/52 
+  Installing : systemtap-4.0-13.el7.x86_64                                                         35/52 
+  Installing : gcc-c++-4.8.5-44.el7.x86_64                                                         36/52 
+  Installing : libtool-2.4.2-22.el7_3.x86_64                                                       37/52 
+  Installing : intltool-0.50.2-7.el7.noarch                                                        38/52 
+  Installing : rpm-build-4.11.3-48.el7_9.x86_64                                                    39/52 
+  Installing : subversion-1.7.14-16.el7.x86_64                                                     40/52 
+  Installing : flex-2.5.37-6.el7.x86_64                                                            41/52 
+  Installing : bison-3.0.4-2.el7.x86_64                                                            42/52 
+  Installing : rpm-sign-4.11.3-48.el7_9.x86_64                                                     43/52 
+  Installing : diffstat-1.57-4.el7.x86_64                                                          44/52 
+  Installing : cscope-15.8-10.el7.x86_64                                                           45/52 
+  Installing : indent-2.2.11-13.el7.x86_64                                                         46/52 
+  Installing : swig-2.0.10-5.el7.x86_64                                                            47/52 
+  Installing : 1:doxygen-1.8.5-4.el7.x86_64                                                        48/52 
+  Installing : rcs-5.9.0-7.el7.x86_64                                                              49/52 
+  Installing : byacc-1.9.20130304-3.el7.x86_64                                                     50/52 
+  Installing : patchutils-0.3.3-5.el7_9.x86_64                                                     51/52 
+  Installing : ctags-5.8-13.el7.x86_64                                                             52/52 
+  Verifying  : ctags-5.8-13.el7.x86_64                                                              1/52 
+  Verifying  : gcc-c++-4.8.5-44.el7.x86_64                                                          2/52 
+  Verifying  : gcc-gfortran-4.8.5-44.el7.x86_64                                                     3/52 
+  Verifying  : kernel-headers-3.10.0-1160.62.1.el7.x86_64                                           4/52 
+  Verifying  : perl-XML-Parser-2.41-10.el7.x86_64                                                   5/52 
+  Verifying  : patchutils-0.3.3-5.el7_9.x86_64                                                      6/52 
+  Verifying  : systemtap-devel-4.0-13.el7.x86_64                                                    7/52 
+  Verifying  : byacc-1.9.20130304-3.el7.x86_64                                                      8/52 
+  Verifying  : automake-1.13.4-3.el7.noarch                                                         9/52 
+  Verifying  : m4-1.4.16-10.el7.x86_64                                                             10/52 
+  Verifying  : subversion-libs-1.7.14-16.el7.x86_64                                                11/52 
+  Verifying  : git-1.8.3.1-23.el7_8.x86_64                                                         12/52 
+  Verifying  : rcs-5.9.0-7.el7.x86_64                                                              13/52 
+  Verifying  : 1:doxygen-1.8.5-4.el7.x86_64                                                        14/52 
+  Verifying  : libquadmath-4.8.5-44.el7.x86_64                                                     15/52 
+  Verifying  : perl-TermReadKey-2.30-20.el7.x86_64                                                 16/52 
+  Verifying  : perl-Test-Harness-3.28-3.el7.noarch                                                 17/52 
+  Verifying  : apr-1.4.8-7.el7.x86_64                                                              18/52 
+  Verifying  : glibc-devel-2.17-325.el7_9.x86_64                                                   19/52 
+  Verifying  : perl-Thread-Queue-3.02-2.el7.noarch                                                 20/52 
+  Verifying  : cpp-4.8.5-44.el7.x86_64                                                             21/52 
+  Verifying  : glibc-headers-2.17-325.el7_9.x86_64                                                 22/52 
+  Verifying  : intltool-0.50.2-7.el7.noarch                                                        23/52 
+  Verifying  : perl-srpm-macros-1-8.el7.noarch                                                     24/52 
+  Verifying  : swig-2.0.10-5.el7.x86_64                                                            25/52 
+  Verifying  : perl-Git-1.8.3.1-23.el7_8.noarch                                                    26/52 
+  Verifying  : libtool-2.4.2-22.el7_3.x86_64                                                       27/52 
+  Verifying  : patch-2.7.1-12.el7_7.x86_64                                                         28/52 
+  Verifying  : systemtap-client-4.0-13.el7.x86_64                                                  29/52 
+  Verifying  : rpm-build-4.11.3-48.el7_9.x86_64                                                    30/52 
+  Verifying  : systemtap-4.0-13.el7.x86_64                                                         31/52 
+  Verifying  : gettext-devel-0.19.8.1-3.el7.x86_64                                                 32/52 
+  Verifying  : perl-Data-Dumper-2.145-3.el7.x86_64                                                 33/52 
+  Verifying  : libgfortran-4.8.5-44.el7.x86_64                                                     34/52 
+  Verifying  : indent-2.2.11-13.el7.x86_64                                                         35/52 
+  Verifying  : apr-util-1.5.2-6.el7.x86_64                                                         36/52 
+  Verifying  : subversion-1.7.14-16.el7.x86_64                                                     37/52 
+  Verifying  : gcc-4.8.5-44.el7.x86_64                                                             38/52 
+  Verifying  : flex-2.5.37-6.el7.x86_64                                                            39/52 
+  Verifying  : kernel-debug-devel-3.10.0-1160.62.1.el7.x86_64                                      40/52 
+  Verifying  : 1:perl-Error-0.17020-2.el7.noarch                                                   41/52 
+  Verifying  : cscope-15.8-10.el7.x86_64                                                           42/52 
+  Verifying  : bison-3.0.4-2.el7.x86_64                                                            43/52 
+  Verifying  : autoconf-2.69-11.el7.noarch                                                         44/52 
+  Verifying  : libquadmath-devel-4.8.5-44.el7.x86_64                                               45/52 
+  Verifying  : dwz-0.11-3.el7.x86_64                                                               46/52 
+  Verifying  : libstdc++-devel-4.8.5-44.el7.x86_64                                                 47/52 
+  Verifying  : python-srpm-macros-3-34.el7.noarch                                                  48/52 
+  Verifying  : diffstat-1.57-4.el7.x86_64                                                          49/52 
+  Verifying  : gettext-common-devel-0.19.8.1-3.el7.noarch                                          50/52 
+  Verifying  : rpm-sign-4.11.3-48.el7_9.x86_64                                                     51/52 
+  Verifying  : redhat-rpm-config-9.1.0-88.el7.centos.noarch                                        52/52 
+
+Installed:
+  autoconf.noarch 0:2.69-11.el7                 automake.noarch 0:1.13.4-3.el7                           
+  bison.x86_64 0:3.0.4-2.el7                    byacc.x86_64 0:1.9.20130304-3.el7                        
+  cscope.x86_64 0:15.8-10.el7                   ctags.x86_64 0:5.8-13.el7                                
+  diffstat.x86_64 0:1.57-4.el7                  doxygen.x86_64 1:1.8.5-4.el7                             
+  flex.x86_64 0:2.5.37-6.el7                    gcc.x86_64 0:4.8.5-44.el7                                
+  gcc-c++.x86_64 0:4.8.5-44.el7                 gcc-gfortran.x86_64 0:4.8.5-44.el7                       
+  git.x86_64 0:1.8.3.1-23.el7_8                 indent.x86_64 0:2.2.11-13.el7                            
+  intltool.noarch 0:0.50.2-7.el7                libtool.x86_64 0:2.4.2-22.el7_3                          
+  patch.x86_64 0:2.7.1-12.el7_7                 patchutils.x86_64 0:0.3.3-5.el7_9                        
+  rcs.x86_64 0:5.9.0-7.el7                      redhat-rpm-config.noarch 0:9.1.0-88.el7.centos           
+  rpm-build.x86_64 0:4.11.3-48.el7_9            rpm-sign.x86_64 0:4.11.3-48.el7_9                        
+  subversion.x86_64 0:1.7.14-16.el7             swig.x86_64 0:2.0.10-5.el7                               
+  systemtap.x86_64 0:4.0-13.el7                
+
+Dependency Installed:
+  apr.x86_64 0:1.4.8-7.el7                              apr-util.x86_64 0:1.5.2-6.el7                    
+  cpp.x86_64 0:4.8.5-44.el7                             dwz.x86_64 0:0.11-3.el7                          
+  gettext-common-devel.noarch 0:0.19.8.1-3.el7          gettext-devel.x86_64 0:0.19.8.1-3.el7            
+  glibc-devel.x86_64 0:2.17-325.el7_9                   glibc-headers.x86_64 0:2.17-325.el7_9            
+  kernel-debug-devel.x86_64 0:3.10.0-1160.62.1.el7      kernel-headers.x86_64 0:3.10.0-1160.62.1.el7     
+  libgfortran.x86_64 0:4.8.5-44.el7                     libquadmath.x86_64 0:4.8.5-44.el7                
+  libquadmath-devel.x86_64 0:4.8.5-44.el7               libstdc++-devel.x86_64 0:4.8.5-44.el7            
+  m4.x86_64 0:1.4.16-10.el7                             perl-Data-Dumper.x86_64 0:2.145-3.el7            
+  perl-Error.noarch 1:0.17020-2.el7                     perl-Git.noarch 0:1.8.3.1-23.el7_8               
+  perl-TermReadKey.x86_64 0:2.30-20.el7                 perl-Test-Harness.noarch 0:3.28-3.el7            
+  perl-Thread-Queue.noarch 0:3.02-2.el7                 perl-XML-Parser.x86_64 0:2.41-10.el7             
+  perl-srpm-macros.noarch 0:1-8.el7                     python-srpm-macros.noarch 0:3-34.el7             
+  subversion-libs.x86_64 0:1.7.14-16.el7                systemtap-client.x86_64 0:4.0-13.el7             
+  systemtap-devel.x86_64 0:4.0-13.el7                  
+
+Complete!
+[user@localhost ~]$ sudo yum install git
+Loaded plugins: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+ * base: mirror.pit.teraswitch.com
+ * extras: mirror.pit.teraswitch.com
+ * updates: mirror.pit.teraswitch.com
+Package git-1.8.3.1-23.el7_8.x86_64 already installed and latest version
+Nothing to do
+[user@localhost ~]$ git clone https://github.com/miek/inspectrum.git
+Cloning into 'inspectrum'...
+remote: Enumerating objects: 2194, done.
+remote: Counting objects: 100% (138/138), done.
+remote: Compressing objects: 100% (67/67), done.
+remote: Total 2194 (delta 79), reused 105 (delta 63), pack-reused 2056
+Receiving objects: 100% (2194/2194), 1.32 MiB | 0 bytes/s, done.
+Resolving deltas: 100% (1481/1481), done.
+[user@localhost ~]$ git clone git://github.com/jgaeddert/liquid-dsp.git
+Cloning into 'liquid-dsp'...
+fatal: remote error: 
+  The unauthenticated git protocol on port 9418 is no longer supported.
+Please see https://github.blog/2021-09-01-improving-git-protocol-security-github/ for more information.
+[user@localhost ~]$ git clone https://github.com/jgaeddert/liquid-dsp.git
+Cloning into 'liquid-dsp'...
+remote: Enumerating objects: 58221, done.
+remote: Counting objects: 100% (4002/4002), done.
+remote: Compressing objects: 100% (1278/1278), done.
+remote: Total 58221 (delta 2701), reused 3945 (delta 2665), pack-reused 54219
+Receiving objects: 100% (58221/58221), 23.27 MiB | 3.91 MiB/s, done.
+Resolving deltas: 100% (36222/36222), done.
+[user@localhost ~]$ mkdir my-root
+[user@localhost ~]$ cmake -v
+bash: cmake: command not found...
+Similar command is: 'make'
+
+[user@localhost ~]$ sudo yum install -y epel-release
+Loaded plugins: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+ * base: mirror.pit.teraswitch.com
+ * extras: mirror.pit.teraswitch.com
+ * updates: mirror.pit.teraswitch.com
+Resolving Dependencies
+--> Running transaction check
+---> Package epel-release.noarch 0:7-11 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+=========================================================================================================
+ Package                      Arch                   Version                Repository              Size
+=========================================================================================================
+Installing:
+ epel-release                 noarch                 7-11                   extras                  15 k
+
+Transaction Summary
+=========================================================================================================
+Install  1 Package
+
+Total download size: 15 k
+Installed size: 24 k
+Downloading packages:
+epel-release-7-11.noarch.rpm                                                      |  15 kB  00:00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : epel-release-7-11.noarch                                                              1/1 
+  Verifying  : epel-release-7-11.noarch                                                              1/1 
+
+Installed:
+  epel-release.noarch 0:7-11                                                                             
+
+Complete!
+[user@localhost ~]$ sudo yum repolist
+Loaded plugins: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+epel/x86_64/metalink                                                              |  12 kB  00:00:00     
+ * base: mirror.pit.teraswitch.com
+ * epel: reflector.westga.edu
+ * extras: mirror.pit.teraswitch.com
+ * updates: mirror.pit.teraswitch.com
+epel                                                                              | 4.7 kB  00:00:00     
+(1/3): epel/x86_64/group_gz                                                       |  96 kB  00:00:00     
+(2/3): epel/x86_64/updateinfo                                                     | 1.0 MB  00:00:00     
+(3/3): epel/x86_64/primary_db                                                     | 7.0 MB  00:00:00     
+repo id                           repo name                                                        status
+base/7/x86_64                     CentOS-7 - Base                                                  10,072
+epel/x86_64                       Extra Packages for Enterprise Linux 7 - x86_64                   13,753
+extras/7/x86_64                   CentOS-7 - Extras                                                   509
+updates/7/x86_64                  CentOS-7 - Updates                                                3,728
+repolist: 28,062
+
+[user@localhost ~]$ sudo yum install cmake3
+Loaded plugins: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+ * base: mirror.pit.teraswitch.com
+ * epel: d2lzkl7pfhq30w.cloudfront.net
+ * extras: mirror.pit.teraswitch.com
+ * updates: mirror.pit.teraswitch.com
+Resolving Dependencies
+--> Running transaction check
+---> Package cmake3.x86_64 0:3.17.5-1.el7 will be installed
+--> Processing Dependency: cmake3-data = 3.17.5-1.el7 for package: cmake3-3.17.5-1.el7.x86_64
+--> Processing Dependency: librhash.so.0()(64bit) for package: cmake3-3.17.5-1.el7.x86_64
+--> Processing Dependency: libuv.so.1()(64bit) for package: cmake3-3.17.5-1.el7.x86_64
+--> Processing Dependency: libzstd.so.1()(64bit) for package: cmake3-3.17.5-1.el7.x86_64
+--> Running transaction check
+---> Package cmake3-data.noarch 0:3.17.5-1.el7 will be installed
+--> Processing Dependency: /usr/bin/python3 for package: cmake3-data-3.17.5-1.el7.noarch
+---> Package libuv.x86_64 1:1.44.1-1.el7 will be installed
+---> Package libzstd.x86_64 0:1.5.2-1.el7 will be installed
+---> Package rhash.x86_64 0:1.3.4-2.el7 will be installed
+--> Running transaction check
+---> Package python3.x86_64 0:3.6.8-18.el7 will be installed
+--> Processing Dependency: python3-libs(x86-64) = 3.6.8-18.el7 for package: python3-3.6.8-18.el7.x86_64
+--> Processing Dependency: python3-setuptools for package: python3-3.6.8-18.el7.x86_64
+--> Processing Dependency: python3-pip for package: python3-3.6.8-18.el7.x86_64
+--> Processing Dependency: libpython3.6m.so.1.0()(64bit) for package: python3-3.6.8-18.el7.x86_64
+--> Running transaction check
+---> Package python3-libs.x86_64 0:3.6.8-18.el7 will be installed
+---> Package python3-pip.noarch 0:9.0.3-8.el7 will be installed
+---> Package python3-setuptools.noarch 0:39.2.0-10.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+=========================================================================================================
+ Package                        Arch               Version                     Repository           Size
+=========================================================================================================
+Installing:
+ cmake3                         x86_64             3.17.5-1.el7                epel                9.6 M
+Installing for dependencies:
+ cmake3-data                    noarch             3.17.5-1.el7                epel                1.6 M
+ libuv                          x86_64             1:1.44.1-1.el7              epel                144 k
+ libzstd                        x86_64             1.5.2-1.el7                 epel                282 k
+ python3                        x86_64             3.6.8-18.el7                updates              70 k
+ python3-libs                   x86_64             3.6.8-18.el7                updates             6.9 M
+ python3-pip                    noarch             9.0.3-8.el7                 base                1.6 M
+ python3-setuptools             noarch             39.2.0-10.el7               base                629 k
+ rhash                          x86_64             1.3.4-2.el7                 epel                118 k
+
+Transaction Summary
+=========================================================================================================
+Install  1 Package (+8 Dependent packages)
+
+Total download size: 21 M
+Installed size: 81 M
+Is this ok [y/d/N]: y
+Downloading packages:
+warning: /var/cache/yum/x86_64/7/epel/packages/cmake3-data-3.17.5-1.el7.noarch.rpm: Header V4 RSA/SHA256 Signature, key ID 352c64e5: NOKEY
+Public key for cmake3-data-3.17.5-1.el7.noarch.rpm is not installed
+(1/9): cmake3-data-3.17.5-1.el7.noarch.rpm                                        | 1.6 MB  00:00:00     
+(2/9): cmake3-3.17.5-1.el7.x86_64.rpm                                             | 9.6 MB  00:00:00     
+(3/9): libuv-1.44.1-1.el7.x86_64.rpm                                              | 144 kB  00:00:00     
+(4/9): libzstd-1.5.2-1.el7.x86_64.rpm                                             | 282 kB  00:00:00     
+(5/9): python3-3.6.8-18.el7.x86_64.rpm                                            |  70 kB  00:00:00     
+(6/9): rhash-1.3.4-2.el7.x86_64.rpm                                               | 118 kB  00:00:00     
+(7/9): python3-setuptools-39.2.0-10.el7.noarch.rpm                                | 629 kB  00:00:00     
+(8/9): python3-pip-9.0.3-8.el7.noarch.rpm                                         | 1.6 MB  00:00:00     
+(9/9): python3-libs-3.6.8-18.el7.x86_64.rpm                                       | 6.9 MB  00:00:01     
+---------------------------------------------------------------------------------------------------------
+Total                                                                    8.3 MB/s |  21 MB  00:00:02     
+Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
+Importing GPG key 0x352C64E5:
+ Userid     : "Fedora EPEL (7) <epel@fedoraproject.org>"
+ Fingerprint: 91e9 7d7c 4a5e 96f1 7f3e 888f 6a2f aea2 352c 64e5
+ Package    : epel-release-7-11.noarch (@extras)
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
+Is this ok [y/N]: y
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : python3-libs-3.6.8-18.el7.x86_64                                                      1/9 
+  Installing : python3-pip-9.0.3-8.el7.noarch                                                        2/9 
+  Installing : python3-3.6.8-18.el7.x86_64                                                           3/9 
+  Installing : python3-setuptools-39.2.0-10.el7.noarch                                               4/9 
+  Installing : 1:libuv-1.44.1-1.el7.x86_64                                                           5/9 
+  Installing : libzstd-1.5.2-1.el7.x86_64                                                            6/9 
+  Installing : rhash-1.3.4-2.el7.x86_64                                                              7/9 
+  Installing : cmake3-data-3.17.5-1.el7.noarch                                                       8/9 
+  Installing : cmake3-3.17.5-1.el7.x86_64                                                            9/9 
+  Verifying  : cmake3-3.17.5-1.el7.x86_64                                                            1/9 
+  Verifying  : python3-setuptools-39.2.0-10.el7.noarch                                               2/9 
+  Verifying  : python3-libs-3.6.8-18.el7.x86_64                                                      3/9 
+  Verifying  : python3-pip-9.0.3-8.el7.noarch                                                        4/9 
+  Verifying  : rhash-1.3.4-2.el7.x86_64                                                              5/9 
+  Verifying  : libzstd-1.5.2-1.el7.x86_64                                                            6/9 
+  Verifying  : python3-3.6.8-18.el7.x86_64                                                           7/9 
+  Verifying  : cmake3-data-3.17.5-1.el7.noarch                                                       8/9 
+  Verifying  : 1:libuv-1.44.1-1.el7.x86_64                                                           9/9 
+
+Installed:
+  cmake3.x86_64 0:3.17.5-1.el7                                                                           
+
+Dependency Installed:
+  cmake3-data.noarch 0:3.17.5-1.el7                       libuv.x86_64 1:1.44.1-1.el7                   
+  libzstd.x86_64 0:1.5.2-1.el7                            python3.x86_64 0:3.6.8-18.el7                 
+  python3-libs.x86_64 0:3.6.8-18.el7                      python3-pip.noarch 0:9.0.3-8.el7              
+  python3-setuptools.noarch 0:39.2.0-10.el7               rhash.x86_64 0:1.3.4-2.el7                    
+
+Complete!
+
+[user@localhost ~]$ sudo yum install fftw
+Loaded plugins: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+ * base: mirror.pit.teraswitch.com
+ * epel: d2lzkl7pfhq30w.cloudfront.net
+ * extras: mirror.pit.teraswitch.com
+ * updates: mirror.pit.teraswitch.com
+Resolving Dependencies
+--> Running transaction check
+---> Package fftw.x86_64 0:3.3.3-8.el7 will be installed
+--> Processing Dependency: libfftw3l_threads.so.3()(64bit) for package: fftw-3.3.3-8.el7.x86_64
+--> Processing Dependency: libfftw3l.so.3()(64bit) for package: fftw-3.3.3-8.el7.x86_64
+--> Processing Dependency: libfftw3f_threads.so.3()(64bit) for package: fftw-3.3.3-8.el7.x86_64
+--> Processing Dependency: libfftw3f.so.3()(64bit) for package: fftw-3.3.3-8.el7.x86_64
+--> Running transaction check
+---> Package fftw-libs-long.x86_64 0:3.3.3-8.el7 will be installed
+---> Package fftw-libs-single.x86_64 0:3.3.3-8.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+=========================================================================================================
+ Package                        Arch                 Version                    Repository          Size
+=========================================================================================================
+Installing:
+ fftw                           x86_64               3.3.3-8.el7                base                45 k
+Installing for dependencies:
+ fftw-libs-long                 x86_64               3.3.3-8.el7                base               495 k
+ fftw-libs-single               x86_64               3.3.3-8.el7                base               766 k
+
+Transaction Summary
+=========================================================================================================
+Install  1 Package (+2 Dependent packages)
+
+Total download size: 1.3 M
+Installed size: 4.2 M
+Is this ok [y/d/N]: y
+Downloading packages:
+(1/3): fftw-3.3.3-8.el7.x86_64.rpm                                                |  45 kB  00:00:00     
+(2/3): fftw-libs-long-3.3.3-8.el7.x86_64.rpm                                      | 495 kB  00:00:00     
+(3/3): fftw-libs-single-3.3.3-8.el7.x86_64.rpm                                    | 766 kB  00:00:00     
+---------------------------------------------------------------------------------------------------------
+Total                                                                    3.2 MB/s | 1.3 MB  00:00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : fftw-libs-long-3.3.3-8.el7.x86_64                                                     1/3 
+  Installing : fftw-libs-single-3.3.3-8.el7.x86_64                                                   2/3 
+  Installing : fftw-3.3.3-8.el7.x86_64                                                               3/3 
+  Verifying  : fftw-libs-single-3.3.3-8.el7.x86_64                                                   1/3 
+  Verifying  : fftw-libs-long-3.3.3-8.el7.x86_64                                                     2/3 
+  Verifying  : fftw-3.3.3-8.el7.x86_64                                                               3/3 
+
+Installed:
+  fftw.x86_64 0:3.3.3-8.el7                                                                              
+
+Dependency Installed:
+  fftw-libs-long.x86_64 0:3.3.3-8.el7                fftw-libs-single.x86_64 0:3.3.3-8.el7               
+
+Complete!
+
+[user@localhost ~]$ sudo yum search qt5
+Loaded plugins: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+ * base: mirror.pit.teraswitch.com
+ * epel: d2lzkl7pfhq30w.cloudfront.net
+ * extras: mirror.pit.teraswitch.com
+ * updates: mirror.pit.teraswitch.com
+=========================================== N/S matched: qt5 ============================================
+adwaita-qt5.i686 : Adwaita Qt5 theme
+adwaita-qt5.x86_64 : Adwaita Qt5 theme
+dbusmenu-qt5.x86_64 : A Qt5 implementation of the DBusMenu protocol
+dbusmenu-qt5-devel.x86_64 : Development files for dbusmenu-qt5
+fcitx-qt5.x86_64 : Fcitx IM module for Qt5
+fcitx-qt5-devel.x86_64 : Development files for fcitx-qt5
+highcontrast-qt5.i686 : HighContrast Qt5 theme
+highcontrast-qt5.x86_64 : HighContrast Qt5 theme
+libkscreen-qt5-devel.x86_64 : Development files for libkscreen-qt5
+lightdm-qt5.x86_64 : LightDM Qt5 client library
+lightdm-qt5-devel.x86_64 : Development files for lightdm-qt5
+phonon-qt5.x86_64 : Multimedia framework api (Qt5 version)
+phonon-qt5-backend-gstreamer.x86_64 : Gstreamer phonon-qt5 backend
+phonon-qt5-devel.x86_64 : Developer files for phonon-qt5
+polkit-qt5-1.x86_64 : Qt5 bindings for PolicyKit
+polkit-qt5-1-devel.x86_64 : Development files for PolicyKit Qt5 bindings
+python-qt5-doc.noarch : Developer documentation for python-qt5
+python-qt5-rpm-macros.noarch : RPM macros python-qt5
+python36-pyqt5-sip.x86_64 : SIP - Python 3/C++ Bindings Generator for pyqt5
+python36-qt5.x86_64 : Python 3 bindings for Qt5
+python36-qt5-base.x86_64 : Python 3 bindings for Qt5 base
+python36-qt5-devel.x86_64 : Development files for python3-qt5
+python36-qt5-webkit.x86_64 : Python3 bindings for Qt5 Webkit
+qca-qt5.x86_64 : Qt5 Cryptographic Architecture
+qca-qt5-botan.x86_64 : Botan plugin for the Qt5 Cryptographic Architecture
+qca-qt5-cyrus-sasl.x86_64 : Cyrus-SASL plugin for the Qt5 Cryptographic Architecture
+qca-qt5-devel.x86_64 : Qt5 Cryptographic Architecture development files
+qca-qt5-gcrypt.x86_64 : Gcrypt plugin for the Qt5 Cryptographic Architecture
+qca-qt5-logger.x86_64 : Logger plugin for the Qt5 Cryptographic Architecture
+qca-qt5-nss.x86_64 : Nss plugin for the Qt5 Cryptographic Architecture
+qca-qt5-ossl.x86_64 : Openssl plugin for the Qt5 Cryptographic Architecture
+qca-qt5-pkcs11.x86_64 : Pkcs11 plugin for the Qt5 Cryptographic Architecture
+qca-qt5-softstore.x86_64 : Pkcs11 plugin for the Qt5 Cryptographic Architecture
+qt5-assistant.x86_64 : Documentation browser for Qt5
+qt5-designer.i686 : Design GUIs for Qt5 applications
+qt5-designer.x86_64 : Design GUIs for Qt5 applications
+qt5-doctools.x86_64 : Qt5 doc tools package
+qt5-linguist.x86_64 : Qt5 Linguist Tools
+qt5-qt3d.i686 : Qt5 - Qt3D QML bindings and C++ APIs
+qt5-qt3d.x86_64 : Qt5 - Qt3D QML bindings and C++ APIs
+qt5-qt3d-devel.i686 : Development files for qt5-qt3d
+qt5-qt3d-devel.x86_64 : Development files for qt5-qt3d
+qt5-qt3d-doc.noarch : API documentation for qt5-qt3d
+qt5-qt3d-examples.x86_64 : Programming examples for qt5-qt3d
+qt5-qtaccountsservice.x86_64 : Qt5 - AccountService addon
+qt5-qtbase.i686 : Qt5 - QtBase components
+qt5-qtbase.x86_64 : Qt5 - QtBase components
+qt5-qtbase-common.noarch : Common files for Qt5
+qt5-qtbase-devel.i686 : Development files for qt5-qtbase
+qt5-qtbase-devel.x86_64 : Development files for qt5-qtbase
+qt5-qtbase-doc.x86_64 : API documentation for qt5-qtbase
+qt5-qtbase-examples.x86_64 : Programming examples for qt5-qtbase
+qt5-qtbase-gui.i686 : Qt5 GUI-related libraries
+qt5-qtbase-gui.x86_64 : Qt5 GUI-related libraries
+qt5-qtbase-mysql.i686 : MySQL driver for Qt5's SQL classes
+qt5-qtbase-mysql.x86_64 : MySQL driver for Qt5's SQL classes
+qt5-qtbase-odbc.i686 : ODBC driver for Qt5's SQL classes
+qt5-qtbase-odbc.x86_64 : ODBC driver for Qt5's SQL classes
+qt5-qtbase-postgresql.i686 : PostgreSQL driver for Qt5's SQL classes
+qt5-qtbase-postgresql.x86_64 : PostgreSQL driver for Qt5's SQL classes
+qt5-qtbase-static.i686 : Static library files for qt5-qtbase
+qt5-qtbase-static.x86_64 : Static library files for qt5-qtbase
+qt5-qtcanvas3d.x86_64 : Qt5 - Canvas3d component
+qt5-qtcanvas3d-doc.noarch : API documentation for qt5-qtcanvas3d
+qt5-qtcanvas3d-examples.x86_64 : Programming examples for qt5-qtcanvas3d
+qt5-qtconfiguration.x86_64 : Qt5 - QtConfiguration module
+qt5-qtconfiguration-devel.x86_64 : Development files for qt5-qtconfiguration
+qt5-qtconnectivity.i686 : Qt5 - Connectivity components
+qt5-qtconnectivity.x86_64 : Qt5 - Connectivity components
+qt5-qtconnectivity-devel.i686 : Development files for qt5-qtconnectivity
+qt5-qtconnectivity-devel.x86_64 : Development files for qt5-qtconnectivity
+qt5-qtconnectivity-doc.noarch : API documentation for qt5-qtconnectivity
+qt5-qtconnectivity-examples.x86_64 : Programming examples for qt5-qtconnectivity
+qt5-qtdeclarative.i686 : Qt5 - QtDeclarative component
+qt5-qtdeclarative.x86_64 : Qt5 - QtDeclarative component
+qt5-qtdeclarative-devel.i686 : Development files for qt5-qtdeclarative
+qt5-qtdeclarative-devel.x86_64 : Development files for qt5-qtdeclarative
+qt5-qtdeclarative-doc.x86_64 : API documentation for qt5-qtdeclarative
+qt5-qtdeclarative-examples.x86_64 : Programming examples for qt5-qtdeclarative
+qt5-qtdeclarative-static.i686 : Static library files for qt5-qtdeclarative
+qt5-qtdeclarative-static.x86_64 : Static library files for qt5-qtdeclarative
+qt5-qtdoc.noarch : Main Qt5 Reference Documentation
+qt5-qtenginio.i686 : Qt5 - Enginio component
+qt5-qtenginio.x86_64 : Qt5 - Enginio component
+qt5-qtenginio-devel.i686 : Development files for qt5-qtenginio
+qt5-qtenginio-devel.x86_64 : Development files for qt5-qtenginio
+qt5-qtenginio-doc.noarch : API documentation for qt5-qtenginio
+qt5-qtenginio-examples.x86_64 : Programming examples for qt5-qtenginio
+qt5-qtgraphicaleffects.i686 : Qt5 - QtGraphicalEffects component
+qt5-qtgraphicaleffects.x86_64 : Qt5 - QtGraphicalEffects component
+qt5-qtgraphicaleffects-doc.noarch : API documentation for qt5-qtgraphicaleffects
+qt5-qtimageformats.i686 : Qt5 - QtImageFormats component
+qt5-qtimageformats.x86_64 : Qt5 - QtImageFormats component
+qt5-qtimageformats-doc.noarch : API documentation for qt5-qtimageformats
+qt5-qtlocation.i686 : Qt5 - Location component
+qt5-qtlocation.x86_64 : Qt5 - Location component
+qt5-qtlocation-devel.i686 : Development files for qt5-qtlocation
+qt5-qtlocation-devel.x86_64 : Development files for qt5-qtlocation
+qt5-qtlocation-doc.noarch : API documentation for qt5-qtlocation
+qt5-qtlocation-examples.x86_64 : Programming examples for qt5-qtlocation
+qt5-qtmultimedia.i686 : Qt5 - Multimedia support
+qt5-qtmultimedia.x86_64 : Qt5 - Multimedia support
+qt5-qtmultimedia-devel.i686 : Development files for qt5-qtmultimedia
+qt5-qtmultimedia-devel.x86_64 : Development files for qt5-qtmultimedia
+qt5-qtmultimedia-doc.noarch : API documentation for qt5-qtmultimedia
+qt5-qtmultimedia-examples.i686 : Programming examples for qt5-qtmultimedia
+qt5-qtmultimedia-examples.x86_64 : Programming examples for qt5-qtmultimedia
+qt5-qtquick1.x86_64 : A declarative language for describing user interfaces in Qt5
+qt5-qtquick1-devel.x86_64 : Development files for qt5-qtquick1
+qt5-qtquick1-examples.x86_64 : Programming examples for qt5-qtquick1
+qt5-qtquickcontrols.x86_64 : Qt5 - module with set of QtQuick controls
+qt5-qtquickcontrols-doc.noarch : API documentation for qt5-qtquickcontrols
+qt5-qtquickcontrols-examples.x86_64 : Programming examples for qt5-qtquickcontrols
+qt5-qtquickcontrols2.i686 : Qt5 - module with set of QtQuick controls for embedded
+qt5-qtquickcontrols2.x86_64 : Qt5 - module with set of QtQuick controls for embedded
+qt5-qtquickcontrols2-devel.i686 : Development files for qt5-qtquickcontrols2
+qt5-qtquickcontrols2-devel.x86_64 : Development files for qt5-qtquickcontrols2
+qt5-qtquickcontrols2-doc.x86_64 : API documentation for qt5-qtquickcontrols2
+qt5-qtquickcontrols2-examples.x86_64 : Examples for qt5-qtquickcontrols2
+qt5-qtscript.i686 : Qt5 - QtScript component
+qt5-qtscript.x86_64 : Qt5 - QtScript component
+qt5-qtscript-devel.i686 : Development files for qt5-qtscript
+qt5-qtscript-devel.x86_64 : Development files for qt5-qtscript
+qt5-qtscript-doc.noarch : API documentation for qt5-qtscript
+qt5-qtscript-examples.x86_64 : Programming examples for qt5-qtscript
+qt5-qtsensors.i686 : Qt5 - Sensors component
+qt5-qtsensors.x86_64 : Qt5 - Sensors component
+qt5-qtsensors-devel.i686 : Development files for qt5-qtsensors
+qt5-qtsensors-devel.x86_64 : Development files for qt5-qtsensors
+qt5-qtsensors-doc.noarch : API documentation for qt5-qtsensors
+qt5-qtsensors-examples.i686 : Programming examples for qt5-qtsensors
+qt5-qtsensors-examples.x86_64 : Programming examples for qt5-qtsensors
+qt5-qtserialbus.i686 : Qt5 - SerialPort component
+qt5-qtserialbus.x86_64 : Qt5 - SerialPort component
+qt5-qtserialbus-devel.i686 : Development files for qt5-qtserialbus
+qt5-qtserialbus-devel.x86_64 : Development files for qt5-qtserialbus
+qt5-qtserialbus-doc.noarch : API documentation for qt5-qtserialbus
+qt5-qtserialbus-examples.x86_64 : Programming examples for qt5-qtserialbus
+qt5-qtserialport.i686 : Qt5 - SerialPort component
+qt5-qtserialport.x86_64 : Qt5 - SerialPort component
+qt5-qtserialport-devel.i686 : Development files for qt5-qtserialport
+qt5-qtserialport-devel.x86_64 : Development files for qt5-qtserialport
+qt5-qtserialport-doc.noarch : API documentation for qt5-qtserialport
+qt5-qtserialport-examples.x86_64 : Programming examples for qt5-qtserialport
+qt5-qtsvg.i686 : Qt5 - Support for rendering and displaying SVG
+qt5-qtsvg.x86_64 : Qt5 - Support for rendering and displaying SVG
+qt5-qtsvg-devel.i686 : Development files for qt5-qtsvg
+qt5-qtsvg-devel.x86_64 : Development files for qt5-qtsvg
+qt5-qtsvg-doc.noarch : API documentation for qt5-qtsvg
+qt5-qtsvg-examples.x86_64 : Programming examples for qt5-qtsvg
+qt5-qttools.x86_64 : Qt5 - QtTool components
+qt5-qttools-common.noarch : Common files for qt5-qttools
+qt5-qttools-devel.i686 : Development files for qt5-qttools
+qt5-qttools-devel.x86_64 : Development files for qt5-qttools
+qt5-qttools-doc.noarch : API documentation for qt5-qttools
+qt5-qttools-examples.x86_64 : Programming examples for qt5-qttools
+qt5-qttools-libs-designer.i686 : Qt5 Designer runtime library
+qt5-qttools-libs-designer.x86_64 : Qt5 Designer runtime library
+qt5-qttools-libs-designercomponents.i686 : Qt5 Designer Components runtime library
+qt5-qttools-libs-designercomponents.x86_64 : Qt5 Designer Components runtime library
+qt5-qttools-libs-help.i686 : Qt5 Help runtime library
+qt5-qttools-libs-help.x86_64 : Qt5 Help runtime library
+qt5-qttools-static.i686 : Static library files for qt5-qttools
+qt5-qttools-static.x86_64 : Static library files for qt5-qttools
+qt5-qttranslations.noarch : Qt5 - QtTranslations module
+qt5-qtwayland.i686 : Qt5 - Wayland platform support and QtCompositor module
+qt5-qtwayland.x86_64 : Qt5 - Wayland platform support and QtCompositor module
+qt5-qtwayland-devel.i686 : Development files for qt5-qtwayland
+qt5-qtwayland-devel.x86_64 : Development files for qt5-qtwayland
+qt5-qtwayland-doc.noarch : API documentation for qt5-qtwayland
+qt5-qtwayland-examples.x86_64 : Programming examples for qt5-qtwayland
+qt5-qtwebchannel.i686 : Qt5 - WebChannel component
+qt5-qtwebchannel.x86_64 : Qt5 - WebChannel component
+qt5-qtwebchannel-devel.i686 : Development files for qt5-qtwebchannel
+qt5-qtwebchannel-devel.x86_64 : Development files for qt5-qtwebchannel
+qt5-qtwebchannel-doc.noarch : API documentation for qt5-qtwebchannel
+qt5-qtwebchannel-examples.x86_64 : Programming examples for qt5-qtwebchannel
+qt5-qtwebkit.x86_64 : Qt5 - QtWebKit components
+qt5-qtwebkit-devel.x86_64 : Development files for qt5-qtwebkit
+qt5-qtwebsockets.i686 : Qt5 - WebSockets component
+qt5-qtwebsockets.x86_64 : Qt5 - WebSockets component
+qt5-qtwebsockets-devel.i686 : Development files for qt5-qtwebsockets
+qt5-qtwebsockets-devel.x86_64 : Development files for qt5-qtwebsockets
+qt5-qtwebsockets-doc.noarch : API documentation for qt5-qtwebsockets
+qt5-qtwebsockets-examples.x86_64 : Programming examples for qt5-qtwebsockets
+qt5-qtx11extras.i686 : Qt5 - X11 support library
+qt5-qtx11extras.x86_64 : Qt5 - X11 support library
+qt5-qtx11extras-devel.i686 : Development files for qt5-qtx11extras
+qt5-qtx11extras-devel.x86_64 : Development files for qt5-qtx11extras
+qt5-qtx11extras-doc.noarch : API documentation for qt5-qtx11extras
+qt5-qtxmlpatterns.i686 : Qt5 - QtXmlPatterns component
+qt5-qtxmlpatterns.x86_64 : Qt5 - QtXmlPatterns component
+qt5-qtxmlpatterns-devel.i686 : Development files for qt5-qtxmlpatterns
+qt5-qtxmlpatterns-devel.x86_64 : Development files for qt5-qtxmlpatterns
+qt5-qtxmlpatterns-doc.noarch : API documentation for qt5-qtxmlpatterns
+qt5-qtxmlpatterns-examples.x86_64 : Programming examples for qt5-qtxmlpatterns
+qt5-rpm-macros.noarch : RPM macros for Qt5
+qt5ct.x86_64 : Qt5 Configuration Tool
+qtkeychain-qt5-devel.x86_64 : Development files for qtkeychain-qt5
+qtlockedfile-qt5.x86_64 : QFile extension with advisory locking functions (Qt5)
+qtlockedfile-qt5-devel.x86_64 : Development files for qtlockedfile-qt5
+qtsingleapplication-qt5.x86_64 : Qt5 library to start applications only once per user
+qtsingleapplication-qt5-devel.x86_64 : Development files for qtsingleapplication-qt5
+qtsinglecoreapplication-qt5.x86_64 : Qt library to start applications only once per user (Qt5)
+qtsinglecoreapplication-qt5-devel.x86_64 : Development files for qtsinglecoreapplication-qt5
+quazip-qt5.x86_64 : Qt5 wrapper for the minizip library
+quazip-qt5-devel.x86_64 : Development files for quazip-qt5
+libkscreen-qt5.x86_64 : KDE display configuration library
+libqtxdg.x86_64 : QtXdg, a Qt5 implementation of XDG standards
+qca-qt5-gnupg.x86_64 : Gnupg plugin for the Qt Cryptographic Architecture
+qt5-qdbusviewer.x86_64 : D-Bus debugger and viewer
+qt5-qtaccountsservice-devel.x86_64 : Development files for Qt Account Service Addon
+qt5-qtstyleplugins.x86_64 : Classic Qt widget styles
+qt5-style-oxygen.x86_64 : Oxygen widget style for Qt 5
+qterminal.x86_64 : Advanced Qt5-based terminal emulator
+qtermwidget.x86_64 : Qt5 terminal widget
+qtermwidget-devel.x86_64 : Qt5 terminal widget - devel package
+qtkeychain-qt5.x86_64 : A password store library
+snapd-qt.x86_64 : Library providing a Qt5 interface to snapd
+snapd-qt-qml.x86_64 : Library providing a Qt5 QML interface to snapd
+
+  Name and summary matches only, use "search all" for everything.
+
+[user@localhost ~]$ sudo yum install qt5-qtbase-static.x86_64
+Loaded plugins: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+ * base: mirror.pit.teraswitch.com
+ * epel: ord.mirror.rackspace.com
+ * extras: mirror.pit.teraswitch.com
+ * updates: mirror.pit.teraswitch.com
+Resolving Dependencies
+--> Running transaction check
+---> Package qt5-qtbase-static.x86_64 0:5.9.7-5.el7_9 will be installed
+--> Processing Dependency: qt5-qtbase-devel(x86-64) = 5.9.7-5.el7_9 for package: qt5-qtbase-static-5.9.7-5.el7_9.x86_64
+--> Processing Dependency: pkgconfig(zlib) for package: qt5-qtbase-static-5.9.7-5.el7_9.x86_64
+--> Processing Dependency: pkgconfig(glib-2.0) for package: qt5-qtbase-static-5.9.7-5.el7_9.x86_64
+--> Processing Dependency: pkgconfig(fontconfig) for package: qt5-qtbase-static-5.9.7-5.el7_9.x86_64
+--> Processing Dependency: pkgconfig(Qt5Gui) for package: qt5-qtbase-static-5.9.7-5.el7_9.x86_64
+--> Processing Dependency: pkgconfig(Qt5Core) for package: qt5-qtbase-static-5.9.7-5.el7_9.x86_64
+--> Running transaction check
+---> Package fontconfig-devel.x86_64 0:2.13.0-4.3.el7 will be installed
+--> Processing Dependency: pkgconfig(freetype2) >= 20.0.14 for package: fontconfig-devel-2.13.0-4.3.el7.x86_64
+--> Processing Dependency: freetype-devel >= 2.8-7 for package: fontconfig-devel-2.13.0-4.3.el7.x86_64
+--> Processing Dependency: pkgconfig(uuid) for package: fontconfig-devel-2.13.0-4.3.el7.x86_64
+--> Processing Dependency: pkgconfig(expat) for package: fontconfig-devel-2.13.0-4.3.el7.x86_64
+---> Package glib2-devel.x86_64 0:2.56.1-9.el7_9 will be installed
+--> Processing Dependency: pkgconfig(libpcre) for package: glib2-devel-2.56.1-9.el7_9.x86_64
+---> Package qt5-qtbase-devel.x86_64 0:5.9.7-5.el7_9 will be installed
+--> Processing Dependency: qt5-rpm-macros for package: qt5-qtbase-devel-5.9.7-5.el7_9.x86_64
+--> Processing Dependency: pkgconfig(gl) for package: qt5-qtbase-devel-5.9.7-5.el7_9.x86_64
+--> Processing Dependency: pkgconfig(egl) for package: qt5-qtbase-devel-5.9.7-5.el7_9.x86_64
+---> Package zlib-devel.x86_64 0:1.2.7-19.el7_9 will be installed
+--> Running transaction check
+---> Package expat-devel.x86_64 0:2.1.0-14.el7_9 will be installed
+---> Package freetype-devel.x86_64 0:2.8-14.el7_9.1 will be installed
+--> Processing Dependency: pkgconfig(libpng) for package: freetype-devel-2.8-14.el7_9.1.x86_64
+---> Package libuuid-devel.x86_64 0:2.23.2-65.el7_9.1 will be installed
+---> Package mesa-libEGL-devel.x86_64 0:18.3.4-12.el7_9 will be installed
+--> Processing Dependency: mesa-khr-devel(x86-64) = 18.3.4-12.el7_9 for package: mesa-libEGL-devel-18.3.4-12.el7_9.x86_64
+--> Processing Dependency: pkgconfig(xdamage) >= 1.1 for package: mesa-libEGL-devel-18.3.4-12.el7_9.x86_64
+--> Processing Dependency: pkgconfig(libdrm) >= 2.4.75 for package: mesa-libEGL-devel-18.3.4-12.el7_9.x86_64
+--> Processing Dependency: pkgconfig(xxf86vm) for package: mesa-libEGL-devel-18.3.4-12.el7_9.x86_64
+--> Processing Dependency: pkgconfig(xfixes) for package: mesa-libEGL-devel-18.3.4-12.el7_9.x86_64
+--> Processing Dependency: pkgconfig(xext) for package: mesa-libEGL-devel-18.3.4-12.el7_9.x86_64
+--> Processing Dependency: libglvnd-devel(x86-64) for package: mesa-libEGL-devel-18.3.4-12.el7_9.x86_64
+---> Package mesa-libGL-devel.x86_64 0:18.3.4-12.el7_9 will be installed
+--> Processing Dependency: gl-manpages for package: mesa-libGL-devel-18.3.4-12.el7_9.x86_64
+---> Package pcre-devel.x86_64 0:8.32-17.el7 will be installed
+---> Package qt5-rpm-macros.noarch 0:5.9.7-5.el7_9 will be installed
+--> Running transaction check
+---> Package gl-manpages.noarch 0:1.1-7.20130122.el7 will be installed
+---> Package libXdamage-devel.x86_64 0:1.1.4-4.1.el7 will be installed
+---> Package libXext-devel.x86_64 0:1.3.3-3.el7 will be installed
+---> Package libXfixes-devel.x86_64 0:5.0.3-1.el7 will be installed
+---> Package libXxf86vm-devel.x86_64 0:1.1.4-1.el7 will be installed
+---> Package libdrm-devel.x86_64 0:2.4.97-2.el7 will be installed
+---> Package libglvnd-devel.x86_64 1:1.0.1-0.8.git5baa1e5.el7 will be installed
+--> Processing Dependency: libglvnd-opengl(x86-64) = 1:1.0.1-0.8.git5baa1e5.el7 for package: 1:libglvnd-devel-1.0.1-0.8.git5baa1e5.el7.x86_64
+--> Processing Dependency: libglvnd-core-devel(x86-64) = 1:1.0.1-0.8.git5baa1e5.el7 for package: 1:libglvnd-devel-1.0.1-0.8.git5baa1e5.el7.x86_64
+--> Processing Dependency: libOpenGL.so.0()(64bit) for package: 1:libglvnd-devel-1.0.1-0.8.git5baa1e5.el7.x86_64
+---> Package libpng-devel.x86_64 2:1.5.13-8.el7 will be installed
+---> Package mesa-khr-devel.x86_64 0:18.3.4-12.el7_9 will be installed
+--> Running transaction check
+---> Package libglvnd-core-devel.x86_64 1:1.0.1-0.8.git5baa1e5.el7 will be installed
+---> Package libglvnd-opengl.x86_64 1:1.0.1-0.8.git5baa1e5.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+=========================================================================================================
+ Package                      Arch            Version                             Repository        Size
+=========================================================================================================
+Installing:
+ qt5-qtbase-static            x86_64          5.9.7-5.el7_9                       updates          1.3 M
+Installing for dependencies:
+ expat-devel                  x86_64          2.1.0-14.el7_9                      updates           58 k
+ fontconfig-devel             x86_64          2.13.0-4.3.el7                      base             138 k
+ freetype-devel               x86_64          2.8-14.el7_9.1                      updates          447 k
+ gl-manpages                  noarch          1.1-7.20130122.el7                  base             994 k
+ glib2-devel                  x86_64          2.56.1-9.el7_9                      updates          453 k
+ libXdamage-devel             x86_64          1.1.4-4.1.el7                       base             9.7 k
+ libXext-devel                x86_64          1.3.3-3.el7                         base              75 k
+ libXfixes-devel              x86_64          5.0.3-1.el7                         base              13 k
+ libXxf86vm-devel             x86_64          1.1.4-1.el7                         base              18 k
+ libdrm-devel                 x86_64          2.4.97-2.el7                        base             143 k
+ libglvnd-core-devel          x86_64          1:1.0.1-0.8.git5baa1e5.el7          base              20 k
+ libglvnd-devel               x86_64          1:1.0.1-0.8.git5baa1e5.el7          base              11 k
+ libglvnd-opengl              x86_64          1:1.0.1-0.8.git5baa1e5.el7          base              43 k
+ libpng-devel                 x86_64          2:1.5.13-8.el7                      base             122 k
+ libuuid-devel                x86_64          2.23.2-65.el7_9.1                   updates           93 k
+ mesa-khr-devel               x86_64          18.3.4-12.el7_9                     updates           20 k
+ mesa-libEGL-devel            x86_64          18.3.4-12.el7_9                     updates           33 k
+ mesa-libGL-devel             x86_64          18.3.4-12.el7_9                     updates          164 k
+ pcre-devel                   x86_64          8.32-17.el7                         base             480 k
+ qt5-qtbase-devel             x86_64          5.9.7-5.el7_9                       updates          3.9 M
+ qt5-rpm-macros               noarch          5.9.7-5.el7_9                       updates           27 k
+ zlib-devel                   x86_64          1.2.7-19.el7_9                      updates           50 k
+
+Transaction Summary
+=========================================================================================================
+Install  1 Package (+22 Dependent packages)
+
+Total download size: 8.5 M
+Installed size: 41 M
+Is this ok [y/d/N]: y
+Downloading packages:
+(1/23): expat-devel-2.1.0-14.el7_9.x86_64.rpm                                     |  58 kB  00:00:00     
+(2/23): fontconfig-devel-2.13.0-4.3.el7.x86_64.rpm                                | 138 kB  00:00:00     
+(3/23): libXdamage-devel-1.1.4-4.1.el7.x86_64.rpm                                 | 9.7 kB  00:00:00     
+(4/23): freetype-devel-2.8-14.el7_9.1.x86_64.rpm                                  | 447 kB  00:00:00     
+(5/23): libXext-devel-1.3.3-3.el7.x86_64.rpm                                      |  75 kB  00:00:00     
+(6/23): glib2-devel-2.56.1-9.el7_9.x86_64.rpm                                     | 453 kB  00:00:00     
+(7/23): libXfixes-devel-5.0.3-1.el7.x86_64.rpm                                    |  13 kB  00:00:00     
+(8/23): libXxf86vm-devel-1.1.4-1.el7.x86_64.rpm                                   |  18 kB  00:00:00     
+(9/23): gl-manpages-1.1-7.20130122.el7.noarch.rpm                                 | 994 kB  00:00:00     
+(10/23): libglvnd-core-devel-1.0.1-0.8.git5baa1e5.el7.x86_64.rpm                  |  20 kB  00:00:00     
+(11/23): libdrm-devel-2.4.97-2.el7.x86_64.rpm                                     | 143 kB  00:00:00     
+(12/23): libglvnd-devel-1.0.1-0.8.git5baa1e5.el7.x86_64.rpm                       |  11 kB  00:00:00     
+(13/23): libglvnd-opengl-1.0.1-0.8.git5baa1e5.el7.x86_64.rpm                      |  43 kB  00:00:00     
+(14/23): libpng-devel-1.5.13-8.el7.x86_64.rpm                                     | 122 kB  00:00:00     
+(15/23): libuuid-devel-2.23.2-65.el7_9.1.x86_64.rpm                               |  93 kB  00:00:00     
+(16/23): pcre-devel-8.32-17.el7.x86_64.rpm                                        | 480 kB  00:00:00     
+(17/23): mesa-khr-devel-18.3.4-12.el7_9.x86_64.rpm                                |  20 kB  00:00:00     
+(18/23): mesa-libGL-devel-18.3.4-12.el7_9.x86_64.rpm                              | 164 kB  00:00:00     
+(19/23): mesa-libEGL-devel-18.3.4-12.el7_9.x86_64.rpm                             |  33 kB  00:00:00     
+(20/23): qt5-rpm-macros-5.9.7-5.el7_9.noarch.rpm                                  |  27 kB  00:00:00     
+(21/23): zlib-devel-1.2.7-19.el7_9.x86_64.rpm                                     |  50 kB  00:00:00     
+(22/23): qt5-qtbase-static-5.9.7-5.el7_9.x86_64.rpm                               | 1.3 MB  00:00:00     
+(23/23): qt5-qtbase-devel-5.9.7-5.el7_9.x86_64.rpm                                | 3.9 MB  00:00:00     
+---------------------------------------------------------------------------------------------------------
+Total                                                                    5.9 MB/s | 8.5 MB  00:00:01     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : libXfixes-devel-5.0.3-1.el7.x86_64                                                   1/23 
+  Installing : libXext-devel-1.3.3-3.el7.x86_64                                                     2/23 
+  Installing : zlib-devel-1.2.7-19.el7_9.x86_64                                                     3/23 
+  Installing : libXxf86vm-devel-1.1.4-1.el7.x86_64                                                  4/23 
+  Installing : libXdamage-devel-1.1.4-4.1.el7.x86_64                                                5/23 
+  Installing : libdrm-devel-2.4.97-2.el7.x86_64                                                     6/23 
+  Installing : mesa-khr-devel-18.3.4-12.el7_9.x86_64                                                7/23 
+  Installing : 2:libpng-devel-1.5.13-8.el7.x86_64                                                   8/23 
+  Installing : freetype-devel-2.8-14.el7_9.1.x86_64                                                 9/23 
+  Installing : expat-devel-2.1.0-14.el7_9.x86_64                                                   10/23 
+  Installing : 1:libglvnd-opengl-1.0.1-0.8.git5baa1e5.el7.x86_64                                   11/23 
+  Installing : gl-manpages-1.1-7.20130122.el7.noarch                                               12/23 
+  Installing : qt5-rpm-macros-5.9.7-5.el7_9.noarch                                                 13/23 
+  Installing : libuuid-devel-2.23.2-65.el7_9.1.x86_64                                              14/23 
+  Installing : fontconfig-devel-2.13.0-4.3.el7.x86_64                                              15/23 
+  Installing : pcre-devel-8.32-17.el7.x86_64                                                       16/23 
+  Installing : glib2-devel-2.56.1-9.el7_9.x86_64                                                   17/23 
+  Installing : 1:libglvnd-core-devel-1.0.1-0.8.git5baa1e5.el7.x86_64                               18/23 
+  Installing : 1:libglvnd-devel-1.0.1-0.8.git5baa1e5.el7.x86_64                                    19/23 
+  Installing : mesa-libGL-devel-18.3.4-12.el7_9.x86_64                                             20/23 
+  Installing : mesa-libEGL-devel-18.3.4-12.el7_9.x86_64                                            21/23 
+  Installing : qt5-qtbase-devel-5.9.7-5.el7_9.x86_64                                               22/23 
+  Installing : qt5-qtbase-static-5.9.7-5.el7_9.x86_64                                              23/23 
+  Verifying  : 1:libglvnd-devel-1.0.1-0.8.git5baa1e5.el7.x86_64                                     1/23 
+  Verifying  : 2:libpng-devel-1.5.13-8.el7.x86_64                                                   2/23 
+  Verifying  : 1:libglvnd-core-devel-1.0.1-0.8.git5baa1e5.el7.x86_64                                3/23 
+  Verifying  : mesa-libGL-devel-18.3.4-12.el7_9.x86_64                                              4/23 
+  Verifying  : pcre-devel-8.32-17.el7.x86_64                                                        5/23 
+  Verifying  : mesa-khr-devel-18.3.4-12.el7_9.x86_64                                                6/23 
+  Verifying  : libXdamage-devel-1.1.4-4.1.el7.x86_64                                                7/23 
+  Verifying  : fontconfig-devel-2.13.0-4.3.el7.x86_64                                               8/23 
+  Verifying  : libuuid-devel-2.23.2-65.el7_9.1.x86_64                                               9/23 
+  Verifying  : qt5-qtbase-static-5.9.7-5.el7_9.x86_64                                              10/23 
+  Verifying  : libdrm-devel-2.4.97-2.el7.x86_64                                                    11/23 
+  Verifying  : mesa-libEGL-devel-18.3.4-12.el7_9.x86_64                                            12/23 
+  Verifying  : glib2-devel-2.56.1-9.el7_9.x86_64                                                   13/23 
+  Verifying  : qt5-rpm-macros-5.9.7-5.el7_9.noarch                                                 14/23 
+  Verifying  : gl-manpages-1.1-7.20130122.el7.noarch                                               15/23 
+  Verifying  : libXxf86vm-devel-1.1.4-1.el7.x86_64                                                 16/23 
+  Verifying  : zlib-devel-1.2.7-19.el7_9.x86_64                                                    17/23 
+  Verifying  : libXext-devel-1.3.3-3.el7.x86_64                                                    18/23 
+  Verifying  : freetype-devel-2.8-14.el7_9.1.x86_64                                                19/23 
+  Verifying  : 1:libglvnd-opengl-1.0.1-0.8.git5baa1e5.el7.x86_64                                   20/23 
+  Verifying  : expat-devel-2.1.0-14.el7_9.x86_64                                                   21/23 
+  Verifying  : libXfixes-devel-5.0.3-1.el7.x86_64                                                  22/23 
+  Verifying  : qt5-qtbase-devel-5.9.7-5.el7_9.x86_64                                               23/23 
+
+Installed:
+  qt5-qtbase-static.x86_64 0:5.9.7-5.el7_9                                                               
+
+Dependency Installed:
+  expat-devel.x86_64 0:2.1.0-14.el7_9                   fontconfig-devel.x86_64 0:2.13.0-4.3.el7        
+  freetype-devel.x86_64 0:2.8-14.el7_9.1                gl-manpages.noarch 0:1.1-7.20130122.el7         
+  glib2-devel.x86_64 0:2.56.1-9.el7_9                   libXdamage-devel.x86_64 0:1.1.4-4.1.el7         
+  libXext-devel.x86_64 0:1.3.3-3.el7                    libXfixes-devel.x86_64 0:5.0.3-1.el7            
+  libXxf86vm-devel.x86_64 0:1.1.4-1.el7                 libdrm-devel.x86_64 0:2.4.97-2.el7              
+  libglvnd-core-devel.x86_64 1:1.0.1-0.8.git5baa1e5.el7 libglvnd-devel.x86_64 1:1.0.1-0.8.git5baa1e5.el7
+  libglvnd-opengl.x86_64 1:1.0.1-0.8.git5baa1e5.el7     libpng-devel.x86_64 2:1.5.13-8.el7              
+  libuuid-devel.x86_64 0:2.23.2-65.el7_9.1              mesa-khr-devel.x86_64 0:18.3.4-12.el7_9         
+  mesa-libEGL-devel.x86_64 0:18.3.4-12.el7_9            mesa-libGL-devel.x86_64 0:18.3.4-12.el7_9       
+  pcre-devel.x86_64 0:8.32-17.el7                       qt5-qtbase-devel.x86_64 0:5.9.7-5.el7_9         
+  qt5-rpm-macros.noarch 0:5.9.7-5.el7_9                 zlib-devel.x86_64 0:1.2.7-19.el7_9              
+
+Complete!
+
+[user@localhost ~]$ cmake3 --version
+cmake3 version 3.17.5
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+[user@localhost ~]$ cmake --version
+bash: cmake: command not found...
+Similar command is: 'make'
+
+[user@localhost ~]$ cd liquid-dsp/
+[user@localhost liquid-dsp]$ ./bootstrap.sh 
+[user@localhost liquid-dsp]$ ./configure 
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for ranlib... ranlib
+checking for error_at_line... yes
+checking how to run the C preprocessor... gcc -E
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible malloc... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible realloc... yes
+checking for main in -lc... yes
+checking for main in -lm... yes
+checking for malloc... yes
+checking for realloc... yes
+checking for free... yes
+checking for memset... yes
+checking for memmove... yes
+checking for sinf... yes
+checking for cosf... yes
+checking for expf... yes
+checking for cargf... yes
+checking for cexpf... yes
+checking for crealf... yes
+checking for cimagf... yes
+checking for sqrtf... yes
+checking stdio.h usability... yes
+checking stdio.h presence... yes
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking complex.h usability... yes
+checking complex.h presence... yes
+checking for complex.h... yes
+checking for string.h... (cached) yes
+checking getopt.h usability... yes
+checking getopt.h presence... yes
+checking for getopt.h... yes
+checking sys/resource.h usability... yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+checking float.h usability... yes
+checking float.h presence... yes
+checking for float.h... yes
+checking for inttypes.h... (cached) yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking fec.h usability... no
+checking fec.h presence... no
+checking for fec.h... no
+checking fftw3.h usability... no
+checking fftw3.h presence... no
+checking for fftw3.h... no
+checking for fftwf_plan_dft_1d in -lfftw3f... no
+configure: WARNING: fftw3 library useful but not required
+checking for create_viterbi27 in -lfec... no
+configure: WARNING: fec library useful but not required
+checking for inline... inline
+checking for size_t... yes
+checking for uint32_t... yes
+checking for uint8_t... yes
+checking size of short int... 2
+checking size of int... 4
+checking size of long int... 8
+checking size of long long int... 8
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking target system type... x86_64-pc-linux-gnu
+checking for x86 cpuid  output... unknown
+checking for x86 cpuid 0x00000001 output... 206a1:800:9dba2203:78bfbff
+checking mmintrin.h usability... yes
+checking mmintrin.h presence... yes
+checking for mmintrin.h... yes
+checking xmmintrin.h usability... yes
+checking xmmintrin.h presence... yes
+checking for xmmintrin.h... yes
+checking emmintrin.h usability... yes
+checking emmintrin.h presence... yes
+checking for emmintrin.h... yes
+checking pmmintrin.h usability... no
+checking pmmintrin.h presence... no
+checking for pmmintrin.h... no
+checking tmmintrin.h usability... no
+checking tmmintrin.h presence... no
+checking for tmmintrin.h... no
+checking smmintrin.h usability... no
+checking smmintrin.h presence... no
+checking for smmintrin.h... no
+checking immintrin.h usability... yes
+checking immintrin.h presence... yes
+checking for immintrin.h... yes
+checking whether mmx is supported... yes
+checking whether sse is supported... yes
+checking whether sse2 is supported... yes
+checking whether sse3 is supported... yes
+checking whether ssse3 is supported... yes
+checking whether sse4.1 is supported... yes
+checking whether sse4.2 is supported... yes
+checking whether avx is supported... yes
+checking whether C compiler accepts -mmmx... yes
+checking whether C compiler accepts -msse... yes
+checking whether C compiler accepts -msse2... yes
+checking whether C compiler accepts -mavx... yes
+checking for ar... ar
+configure: creating ./config.status
+config.status: creating makefile
+config.status: creating config.h
+
+[user@localhost liquid-dsp]$ sudo yum install fftw-static.x86_64
+Loaded plugins: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+ * base: mirror.pit.teraswitch.com
+ * epel: d2lzkl7pfhq30w.cloudfront.net
+ * extras: mirror.pit.teraswitch.com
+ * updates: mirror.pit.teraswitch.com
+Resolving Dependencies
+--> Running transaction check
+---> Package fftw-static.x86_64 0:3.3.3-8.el7 will be installed
+--> Processing Dependency: fftw-devel(x86-64) = 3.3.3-8.el7 for package: fftw-static-3.3.3-8.el7.x86_64
+--> Running transaction check
+---> Package fftw-devel.x86_64 0:3.3.3-8.el7 will be installed
+--> Processing Dependency: fftw-libs(x86-64) = 3.3.3-8.el7 for package: fftw-devel-3.3.3-8.el7.x86_64
+--> Running transaction check
+---> Package fftw-libs.x86_64 0:3.3.3-8.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+=========================================================================================================
+ Package                    Arch                  Version                      Repository           Size
+=========================================================================================================
+Installing:
+ fftw-static                x86_64                3.3.3-8.el7                  base                1.6 M
+Installing for dependencies:
+ fftw-devel                 x86_64                3.3.3-8.el7                  base                128 k
+ fftw-libs                  x86_64                3.3.3-8.el7                  base                8.5 k
+
+Transaction Summary
+=========================================================================================================
+Install  1 Package (+2 Dependent packages)
+
+Total download size: 1.7 M
+Installed size: 8.7 M
+Is this ok [y/d/N]: y
+Downloading packages:
+(1/3): fftw-libs-3.3.3-8.el7.x86_64.rpm                                           | 8.5 kB  00:00:00     
+(2/3): fftw-devel-3.3.3-8.el7.x86_64.rpm                                          | 128 kB  00:00:00     
+(3/3): fftw-static-3.3.3-8.el7.x86_64.rpm                                         | 1.6 MB  00:00:00     
+---------------------------------------------------------------------------------------------------------
+Total                                                                    3.9 MB/s | 1.7 MB  00:00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : fftw-libs-3.3.3-8.el7.x86_64                                                          1/3 
+  Installing : fftw-devel-3.3.3-8.el7.x86_64                                                         2/3 
+  Installing : fftw-static-3.3.3-8.el7.x86_64                                                        3/3 
+  Verifying  : fftw-devel-3.3.3-8.el7.x86_64                                                         1/3 
+  Verifying  : fftw-static-3.3.3-8.el7.x86_64                                                        2/3 
+  Verifying  : fftw-libs-3.3.3-8.el7.x86_64                                                          3/3 
+
+Installed:
+  fftw-static.x86_64 0:3.3.3-8.el7                                                                       
+
+Dependency Installed:
+  fftw-devel.x86_64 0:3.3.3-8.el7                     fftw-libs.x86_64 0:3.3.3-8.el7                    
+
+Complete!
+[user@localhost liquid-dsp]$ ./configure
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for ranlib... ranlib
+checking for error_at_line... yes
+checking how to run the C preprocessor... gcc -E
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible malloc... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible realloc... yes
+checking for main in -lc... yes
+checking for main in -lm... yes
+checking for malloc... yes
+checking for realloc... yes
+checking for free... yes
+checking for memset... yes
+checking for memmove... yes
+checking for sinf... yes
+checking for cosf... yes
+checking for expf... yes
+checking for cargf... yes
+checking for cexpf... yes
+checking for crealf... yes
+checking for cimagf... yes
+checking for sqrtf... yes
+checking stdio.h usability... yes
+checking stdio.h presence... yes
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking complex.h usability... yes
+checking complex.h presence... yes
+checking for complex.h... yes
+checking for string.h... (cached) yes
+checking getopt.h usability... yes
+checking getopt.h presence... yes
+checking for getopt.h... yes
+checking sys/resource.h usability... yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+checking float.h usability... yes
+checking float.h presence... yes
+checking for float.h... yes
+checking for inttypes.h... (cached) yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking fec.h usability... no
+checking fec.h presence... no
+checking for fec.h... no
+checking fftw3.h usability... yes
+checking fftw3.h presence... yes
+checking for fftw3.h... yes
+checking for fftwf_plan_dft_1d in -lfftw3f... yes
+checking for create_viterbi27 in -lfec... no
+configure: WARNING: fec library useful but not required
+checking for inline... inline
+checking for size_t... yes
+checking for uint32_t... yes
+checking for uint8_t... yes
+checking size of short int... 2
+checking size of int... 4
+checking size of long int... 8
+checking size of long long int... 8
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking target system type... x86_64-pc-linux-gnu
+checking for x86 cpuid  output... unknown
+checking for x86 cpuid 0x00000001 output... 206a1:800:9dba2203:78bfbff
+checking mmintrin.h usability... yes
+checking mmintrin.h presence... yes
+checking for mmintrin.h... yes
+checking xmmintrin.h usability... yes
+checking xmmintrin.h presence... yes
+checking for xmmintrin.h... yes
+checking emmintrin.h usability... yes
+checking emmintrin.h presence... yes
+checking for emmintrin.h... yes
+checking pmmintrin.h usability... no
+checking pmmintrin.h presence... no
+checking for pmmintrin.h... no
+checking tmmintrin.h usability... no
+checking tmmintrin.h presence... no
+checking for tmmintrin.h... no
+checking smmintrin.h usability... no
+checking smmintrin.h presence... no
+checking for smmintrin.h... no
+checking immintrin.h usability... yes
+checking immintrin.h presence... yes
+checking for immintrin.h... yes
+checking whether mmx is supported... yes
+checking whether sse is supported... yes
+checking whether sse2 is supported... yes
+checking whether sse3 is supported... yes
+checking whether ssse3 is supported... yes
+checking whether sse4.1 is supported... yes
+checking whether sse4.2 is supported... yes
+checking whether avx is supported... yes
+checking whether C compiler accepts -mmmx... yes
+checking whether C compiler accepts -msse... yes
+checking whether C compiler accepts -msse2... yes
+checking whether C compiler accepts -mavx... yes
+checking for ar... ar
+configure: creating ./config.status
+config.status: creating makefile
+config.status: creating config.h
+[user@localhost liquid-dsp]$ ./configure --prefix=/home/user/my-root
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for ranlib... ranlib
+checking for error_at_line... yes
+checking how to run the C preprocessor... gcc -E
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible malloc... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible realloc... yes
+checking for main in -lc... yes
+checking for main in -lm... yes
+checking for malloc... yes
+checking for realloc... yes
+checking for free... yes
+checking for memset... yes
+checking for memmove... yes
+checking for sinf... yes
+checking for cosf... yes
+checking for expf... yes
+checking for cargf... yes
+checking for cexpf... yes
+checking for crealf... yes
+checking for cimagf... yes
+checking for sqrtf... yes
+checking stdio.h usability... yes
+checking stdio.h presence... yes
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking complex.h usability... yes
+checking complex.h presence... yes
+checking for complex.h... yes
+checking for string.h... (cached) yes
+checking getopt.h usability... yes
+checking getopt.h presence... yes
+checking for getopt.h... yes
+checking sys/resource.h usability... yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+checking float.h usability... yes
+checking float.h presence... yes
+checking for float.h... yes
+checking for inttypes.h... (cached) yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking fec.h usability... no
+checking fec.h presence... no
+checking for fec.h... no
+checking fftw3.h usability... yes
+checking fftw3.h presence... yes
+checking for fftw3.h... yes
+checking for fftwf_plan_dft_1d in -lfftw3f... yes
+checking for create_viterbi27 in -lfec... no
+configure: WARNING: fec library useful but not required
+checking for inline... inline
+checking for size_t... yes
+checking for uint32_t... yes
+checking for uint8_t... yes
+checking size of short int... 2
+checking size of int... 4
+checking size of long int... 8
+checking size of long long int... 8
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking target system type... x86_64-pc-linux-gnu
+checking for x86 cpuid  output... unknown
+checking for x86 cpuid 0x00000001 output... 206a1:800:9dba2203:78bfbff
+checking mmintrin.h usability... yes
+checking mmintrin.h presence... yes
+checking for mmintrin.h... yes
+checking xmmintrin.h usability... yes
+checking xmmintrin.h presence... yes
+checking for xmmintrin.h... yes
+checking emmintrin.h usability... yes
+checking emmintrin.h presence... yes
+checking for emmintrin.h... yes
+checking pmmintrin.h usability... no
+checking pmmintrin.h presence... no
+checking for pmmintrin.h... no
+checking tmmintrin.h usability... no
+checking tmmintrin.h presence... no
+checking for tmmintrin.h... no
+checking smmintrin.h usability... no
+checking smmintrin.h presence... no
+checking for smmintrin.h... no
+checking immintrin.h usability... yes
+checking immintrin.h presence... yes
+checking for immintrin.h... yes
+checking whether mmx is supported... yes
+checking whether sse is supported... yes
+checking whether sse2 is supported... yes
+checking whether sse3 is supported... yes
+checking whether ssse3 is supported... yes
+checking whether sse4.1 is supported... yes
+checking whether sse4.2 is supported... yes
+checking whether avx is supported... yes
+checking whether C compiler accepts -mmmx... yes
+checking whether C compiler accepts -msse... yes
+checking whether C compiler accepts -msse2... yes
+checking whether C compiler accepts -mavx... yes
+checking for ar... ar
+configure: creating ./config.status
+config.status: creating makefile
+config.status: creating config.h
+config.status: config.h is unchanged
+[user@localhost liquid-dsp]$ make
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/libliquid.o src/libliquid.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/agc/src/agc_crcf.o src/agc/src/agc_crcf.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/agc/src/agc_rrrf.o src/agc/src/agc_rrrf.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/audio/src/cvsd.o src/audio/src/cvsd.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/buffer/src/bufferf.o src/buffer/src/bufferf.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/buffer/src/buffercf.o src/buffer/src/buffercf.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/channel/src/channel_cccf.o src/channel/src/channel_cccf.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/dotprod/src/dotprod_cccf.mmx.o src/dotprod/src/dotprod_cccf.mmx.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/dotprod/src/dotprod_crcf.mmx.o src/dotprod/src/dotprod_crcf.mmx.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/dotprod/src/dotprod_rrrf.mmx.o src/dotprod/src/dotprod_rrrf.mmx.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/dotprod/src/sumsq.mmx.o src/dotprod/src/sumsq.mmx.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/equalization/src/equalizer_cccf.o src/equalization/src/equalizer_cccf.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/equalization/src/equalizer_rrrf.o src/equalization/src/equalizer_rrrf.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/fec/src/crc.o src/fec/src/crc.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/fec/src/fec.o src/fec/src/fec.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/fec/src/fec_conv.o src/fec/src/fec_conv.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/fec/src/fec_conv_poly.o src/fec/src/fec_conv_poly.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/fec/src/fec_conv_pmatrix.o src/fec/src/fec_conv_pmatrix.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/fec/src/fec_conv_punctured.o src/fec/src/fec_conv_punctured.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/fec/src/fec_golay2412.o src/fec/src/fec_golay2412.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/fec/src/fec_hamming74.o src/fec/src/fec_hamming74.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/fec/src/fec_hamming84.o src/fec/src/fec_hamming84.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/fec/src/fec_hamming128.o src/fec/src/fec_hamming128.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/fec/src/fec_hamming1511.o src/fec/src/fec_hamming1511.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/fec/src/fec_hamming3126.o src/fec/src/fec_hamming3126.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/fec/src/fec_hamming128_gentab.o src/fec/src/fec_hamming128_gentab.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/fec/src/fec_pass.o src/fec/src/fec_pass.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/fec/src/fec_rep3.o src/fec/src/fec_rep3.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/fec/src/fec_rep5.o src/fec/src/fec_rep5.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/fec/src/fec_rs.o src/fec/src/fec_rs.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/fec/src/fec_secded2216.o src/fec/src/fec_secded2216.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/fec/src/fec_secded3932.o src/fec/src/fec_secded3932.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/fec/src/fec_secded7264.o src/fec/src/fec_secded7264.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/fec/src/interleaver.o src/fec/src/interleaver.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/fec/src/packetizer.o src/fec/src/packetizer.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/fec/src/sumproduct.o src/fec/src/sumproduct.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/fft/src/fftf.o src/fft/src/fftf.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/fft/src/spgramcf.o src/fft/src/spgramcf.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/fft/src/spgramf.o src/fft/src/spgramf.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/fft/src/fft_utilities.o src/fft/src/fft_utilities.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/filter/src/bessel.o src/filter/src/bessel.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/filter/src/butter.o src/filter/src/butter.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/filter/src/cheby1.o src/filter/src/cheby1.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/filter/src/cheby2.o src/filter/src/cheby2.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/filter/src/ellip.o src/filter/src/ellip.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/filter/src/filter_rrrf.o src/filter/src/filter_rrrf.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/filter/src/filter_crcf.o src/filter/src/filter_crcf.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/filter/src/filter_cccf.o src/filter/src/filter_cccf.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/filter/src/firdes.o src/filter/src/firdes.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/filter/src/firdespm.o src/filter/src/firdespm.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/filter/src/fnyquist.o src/filter/src/fnyquist.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/filter/src/gmsk.o src/filter/src/gmsk.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/filter/src/group_delay.o src/filter/src/group_delay.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/filter/src/hM3.o src/filter/src/hM3.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/filter/src/iirdes.pll.o src/filter/src/iirdes.pll.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/filter/src/iirdes.o src/filter/src/iirdes.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/filter/src/lpc.o src/filter/src/lpc.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/filter/src/rcos.o src/filter/src/rcos.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/filter/src/rkaiser.o src/filter/src/rkaiser.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/filter/src/rrcos.o src/filter/src/rrcos.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/framing/src/bpacketgen.o src/framing/src/bpacketgen.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/framing/src/bpacketsync.o src/framing/src/bpacketsync.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/framing/src/bpresync_cccf.o src/framing/src/bpresync_cccf.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/framing/src/bsync_rrrf.o src/framing/src/bsync_rrrf.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/framing/src/bsync_crcf.o src/framing/src/bsync_crcf.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/framing/src/bsync_cccf.o src/framing/src/bsync_cccf.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/framing/src/detector_cccf.o src/framing/src/detector_cccf.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/framing/src/dsssframegen.o src/framing/src/dsssframegen.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/framing/src/dsssframesync.o src/framing/src/dsssframesync.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/framing/src/framedatastats.o src/framing/src/framedatastats.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/framing/src/framesyncstats.o src/framing/src/framesyncstats.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/framing/src/framegen64.o src/framing/src/framegen64.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/framing/src/framesync64.o src/framing/src/framesync64.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/framing/src/flexframegen.o src/framing/src/flexframegen.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/framing/src/flexframesync.o src/framing/src/flexframesync.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/framing/src/fskframegen.o src/framing/src/fskframegen.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/framing/src/fskframesync.o src/framing/src/fskframesync.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/framing/src/gmskframegen.o src/framing/src/gmskframegen.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/framing/src/gmskframesync.o src/framing/src/gmskframesync.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/framing/src/msourcecf.o src/framing/src/msourcecf.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/framing/src/ofdmflexframegen.o src/framing/src/ofdmflexframegen.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/framing/src/ofdmflexframesync.o src/framing/src/ofdmflexframesync.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/framing/src/presync_cccf.o src/framing/src/presync_cccf.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/framing/src/symstreamcf.o src/framing/src/symstreamcf.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/framing/src/symstreamrcf.o src/framing/src/symstreamrcf.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/framing/src/symtrack_cccf.o src/framing/src/symtrack_cccf.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/framing/src/qdetector_cccf.o src/framing/src/qdetector_cccf.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/framing/src/qpacketmodem.o src/framing/src/qpacketmodem.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/framing/src/qpilotgen.o src/framing/src/qpilotgen.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/framing/src/qpilotsync.o src/framing/src/qpilotsync.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/math/src/poly.o src/math/src/poly.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/math/src/polyc.o src/math/src/polyc.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/math/src/polyf.o src/math/src/polyf.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/math/src/polycf.o src/math/src/polycf.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/math/src/math.o src/math/src/math.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/math/src/math.bessel.o src/math/src/math.bessel.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/math/src/math.gamma.o src/math/src/math.gamma.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/math/src/math.complex.o src/math/src/math.complex.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/math/src/math.trig.o src/math/src/math.trig.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/math/src/modular_arithmetic.o src/math/src/modular_arithmetic.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/math/src/poly.findroots.o src/math/src/poly.findroots.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/math/src/windows.o src/math/src/windows.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/matrix/src/matrix.o src/matrix/src/matrix.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/matrix/src/matrixf.o src/matrix/src/matrixf.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/matrix/src/matrixc.o src/matrix/src/matrixc.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/matrix/src/matrixcf.o src/matrix/src/matrixcf.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/matrix/src/smatrix.common.o src/matrix/src/smatrix.common.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/matrix/src/smatrixi.o src/matrix/src/smatrixi.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/modem/src/ampmodem.o src/modem/src/ampmodem.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/modem/src/cpfskdem.o src/modem/src/cpfskdem.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/modem/src/cpfskmod.o src/modem/src/cpfskmod.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/modem/src/fskdem.o src/modem/src/fskdem.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/modem/src/fskmod.o src/modem/src/fskmod.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/modem/src/gmskdem.o src/modem/src/gmskdem.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/modem/src/gmskmod.o src/modem/src/gmskmod.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/modem/src/modem.shim.o src/modem/src/modem.shim.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/modem/src/modemcf.o src/modem/src/modemcf.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/modem/src/modem_utilities.o src/modem/src/modem_utilities.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/modem/src/modem_apsk_const.o src/modem/src/modem_apsk_const.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/modem/src/modem_arb_const.o src/modem/src/modem_arb_const.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/multichannel/src/firpfbch_crcf.o src/multichannel/src/firpfbch_crcf.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/multichannel/src/firpfbch_cccf.o src/multichannel/src/firpfbch_cccf.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/multichannel/src/ofdmframe.common.o src/multichannel/src/ofdmframe.common.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/multichannel/src/ofdmframegen.o src/multichannel/src/ofdmframegen.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/multichannel/src/ofdmframesync.o src/multichannel/src/ofdmframesync.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/nco/src/nco_crcf.o src/nco/src/nco_crcf.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/nco/src/nco.utilities.o src/nco/src/nco.utilities.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/optim/src/chromosome.o src/optim/src/chromosome.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/optim/src/gasearch.o src/optim/src/gasearch.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/optim/src/gradsearch.o src/optim/src/gradsearch.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/optim/src/optim.common.o src/optim/src/optim.common.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/optim/src/qnsearch.o src/optim/src/qnsearch.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/optim/src/utilities.o src/optim/src/utilities.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/quantization/src/compand.o src/quantization/src/compand.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/quantization/src/quantizercf.o src/quantization/src/quantizercf.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/quantization/src/quantizerf.o src/quantization/src/quantizerf.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/quantization/src/quantizer.inline.o src/quantization/src/quantizer.inline.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/random/src/rand.o src/random/src/rand.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/random/src/randn.o src/random/src/randn.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/random/src/randexp.o src/random/src/randexp.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/random/src/randweib.o src/random/src/randweib.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/random/src/randgamma.o src/random/src/randgamma.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/random/src/randnakm.o src/random/src/randnakm.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/random/src/randricek.o src/random/src/randricek.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/random/src/scramble.o src/random/src/scramble.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/sequence/src/bsequence.o src/sequence/src/bsequence.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/sequence/src/msequence.o src/sequence/src/msequence.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/utility/src/bshift_array.o src/utility/src/bshift_array.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/utility/src/byte_utilities.o src/utility/src/byte_utilities.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/utility/src/msb_index.o src/utility/src/msb_index.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/utility/src/pack_bytes.o src/utility/src/pack_bytes.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/utility/src/shift_array.o src/utility/src/shift_array.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/utility/src/utility.o src/utility/src/utility.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/vector/src/vectorf_add.port.o src/vector/src/vectorf_add.port.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/vector/src/vectorf_norm.port.o src/vector/src/vectorf_norm.port.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/vector/src/vectorf_mul.port.o src/vector/src/vectorf_mul.port.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/vector/src/vectorf_trig.port.o src/vector/src/vectorf_trig.port.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/vector/src/vectorcf_add.port.o src/vector/src/vectorcf_add.port.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/vector/src/vectorcf_norm.port.o src/vector/src/vectorcf_norm.port.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/vector/src/vectorcf_mul.port.o src/vector/src/vectorcf_mul.port.c
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations -I. -Iinclude  -c -o src/vector/src/vectorcf_trig.port.o src/vector/src/vectorcf_trig.port.c
+ar r libliquid.a src/libliquid.o src/agc/src/agc_crcf.o src/agc/src/agc_rrrf.o src/audio/src/cvsd.o src/buffer/src/bufferf.o src/buffer/src/buffercf.o src/channel/src/channel_cccf.o src/dotprod/src/dotprod_cccf.mmx.o src/dotprod/src/dotprod_crcf.mmx.o src/dotprod/src/dotprod_rrrf.mmx.o src/dotprod/src/sumsq.mmx.o src/equalization/src/equalizer_cccf.o src/equalization/src/equalizer_rrrf.o src/fec/src/crc.o src/fec/src/fec.o src/fec/src/fec_conv.o src/fec/src/fec_conv_poly.o src/fec/src/fec_conv_pmatrix.o src/fec/src/fec_conv_punctured.o src/fec/src/fec_golay2412.o src/fec/src/fec_hamming74.o src/fec/src/fec_hamming84.o src/fec/src/fec_hamming128.o src/fec/src/fec_hamming1511.o src/fec/src/fec_hamming3126.o src/fec/src/fec_hamming128_gentab.o src/fec/src/fec_pass.o src/fec/src/fec_rep3.o src/fec/src/fec_rep5.o src/fec/src/fec_rs.o src/fec/src/fec_secded2216.o src/fec/src/fec_secded3932.o src/fec/src/fec_secded7264.o src/fec/src/interleaver.o src/fec/src/packetizer.o src/fec/src/sumproduct.o src/fft/src/fftf.o src/fft/src/spgramcf.o src/fft/src/spgramf.o src/fft/src/fft_utilities.o src/filter/src/bessel.o src/filter/src/butter.o src/filter/src/cheby1.o src/filter/src/cheby2.o src/filter/src/ellip.o src/filter/src/filter_rrrf.o src/filter/src/filter_crcf.o src/filter/src/filter_cccf.o src/filter/src/firdes.o src/filter/src/firdespm.o src/filter/src/fnyquist.o src/filter/src/gmsk.o src/filter/src/group_delay.o src/filter/src/hM3.o src/filter/src/iirdes.pll.o src/filter/src/iirdes.o src/filter/src/lpc.o src/filter/src/rcos.o src/filter/src/rkaiser.o src/filter/src/rrcos.o src/framing/src/bpacketgen.o src/framing/src/bpacketsync.o src/framing/src/bpresync_cccf.o src/framing/src/bsync_rrrf.o src/framing/src/bsync_crcf.o src/framing/src/bsync_cccf.o src/framing/src/detector_cccf.o src/framing/src/dsssframegen.o src/framing/src/dsssframesync.o src/framing/src/framedatastats.o src/framing/src/framesyncstats.o src/framing/src/framegen64.o src/framing/src/framesync64.o src/framing/src/flexframegen.o src/framing/src/flexframesync.o src/framing/src/fskframegen.o src/framing/src/fskframesync.o src/framing/src/gmskframegen.o src/framing/src/gmskframesync.o src/framing/src/msourcecf.o src/framing/src/ofdmflexframegen.o src/framing/src/ofdmflexframesync.o src/framing/src/presync_cccf.o src/framing/src/symstreamcf.o src/framing/src/symstreamrcf.o src/framing/src/symtrack_cccf.o src/framing/src/qdetector_cccf.o src/framing/src/qpacketmodem.o src/framing/src/qpilotgen.o src/framing/src/qpilotsync.o src/math/src/poly.o src/math/src/polyc.o src/math/src/polyf.o src/math/src/polycf.o src/math/src/math.o src/math/src/math.bessel.o src/math/src/math.gamma.o src/math/src/math.complex.o src/math/src/math.trig.o src/math/src/modular_arithmetic.o src/math/src/poly.findroots.o src/math/src/windows.o src/matrix/src/matrix.o src/matrix/src/matrixf.o src/matrix/src/matrixc.o src/matrix/src/matrixcf.o src/matrix/src/smatrix.common.o src/matrix/src/smatrixb.o src/matrix/src/smatrixf.o src/matrix/src/smatrixi.o src/modem/src/ampmodem.o src/modem/src/cpfskdem.o src/modem/src/cpfskmod.o src/modem/src/fskdem.o src/modem/src/fskmod.o src/modem/src/gmskdem.o src/modem/src/gmskmod.o src/modem/src/modem.shim.o src/modem/src/modemcf.o src/modem/src/modem_utilities.o src/modem/src/modem_apsk_const.o src/modem/src/modem_arb_const.o src/multichannel/src/firpfbch_crcf.o src/multichannel/src/firpfbch_cccf.o src/multichannel/src/ofdmframe.common.o src/multichannel/src/ofdmframegen.o src/multichannel/src/ofdmframesync.o src/nco/src/nco_crcf.o src/nco/src/nco.utilities.o src/optim/src/chromosome.o src/optim/src/gasearch.o src/optim/src/gradsearch.o src/optim/src/optim.common.o src/optim/src/qnsearch.o src/optim/src/utilities.o src/quantization/src/compand.o src/quantization/src/quantizercf.o src/quantization/src/quantizerf.o src/quantization/src/quantizer.inline.o src/random/src/rand.o src/random/src/randn.o src/random/src/randexp.o src/random/src/randweib.o src/random/src/randgamma.o src/random/src/randnakm.o src/random/src/randricek.o src/random/src/scramble.o src/sequence/src/bsequence.o src/sequence/src/msequence.o src/utility/src/bshift_array.o src/utility/src/byte_utilities.o src/utility/src/msb_index.o src/utility/src/pack_bytes.o src/utility/src/shift_array.o src/utility/src/utility.o src/vector/src/vectorf_add.port.o src/vector/src/vectorf_norm.port.o src/vector/src/vectorf_mul.port.o src/vector/src/vectorf_trig.port.o src/vector/src/vectorcf_add.port.o src/vector/src/vectorcf_norm.port.o src/vector/src/vectorcf_mul.port.o src/vector/src/vectorcf_trig.port.o
+ar: creating libliquid.a
+ranlib libliquid.a
+gcc -g -O2  -msse2  -Wall -fPIC -Wno-deprecated -Wno-deprecated-declarations  -shared -Xlinker -soname=libliquid.so -o libliquid.so -Wl,-whole-archive libliquid.a -Wl,-no-whole-archive -lfftw3f -lm -lc 
+[user@localhost liquid-dsp]$ make install
+installing...
+
+mkdir -p /home/user/my-root/include
+mkdir -p /home/user/my-root/include/liquid
+mkdir -p /home/user/my-root/lib
+install -m 644 -p libliquid.a libliquid.so /home/user/my-root/lib
+install -m 644 -p include/liquid.h /home/user/my-root/include/liquid
+
+---------------------------------------------------------
+  liquid-dsp was successfully installed.     
+
+  On some machines (e.g. Linux) you should rebind your
+  libraries by running 'ldconfig' to make the shared
+  object available.  You might also need to modify your
+  LD_LIBRARY_PATH environment variable to include the
+  directory /home/user/my-root
+
+  Please report bugs to joseph@liquidsdr.org
+---------------------------------------------------------
+
+[user@localhost liquid-dsp]$ sudo ldconfig
+[sudo] password for user: 
+[user@localhost liquid-dsp]$ cd ..
+[user@localhost ~]$ cd inspectrum/
+[user@localhost inspectrum]$ mkdir build
+[user@localhost inspectrum]$ cd build
+[user@localhost build]$ gcc -v
+Using built-in specs.
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper
+Target: x86_64-redhat-linux
+Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
+Thread model: posix
+gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) 
+[user@localhost build]$ sudo yum install centos-release-scl
+[sudo] password for user: 
+Loaded plugins: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+ * base: mirror.pit.teraswitch.com
+ * epel: mirror.team-cymru.com
+ * extras: mirror.pit.teraswitch.com
+ * updates: mirror.pit.teraswitch.com
+Resolving Dependencies
+--> Running transaction check
+---> Package centos-release-scl.noarch 0:2-3.el7.centos will be installed
+--> Processing Dependency: centos-release-scl-rh for package: centos-release-scl-2-3.el7.centos.noarch
+--> Running transaction check
+---> Package centos-release-scl-rh.noarch 0:2-3.el7.centos will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+=========================================================================================================
+ Package                          Arch              Version                      Repository         Size
+=========================================================================================================
+Installing:
+ centos-release-scl               noarch            2-3.el7.centos               extras             12 k
+Installing for dependencies:
+ centos-release-scl-rh            noarch            2-3.el7.centos               extras             12 k
+
+Transaction Summary
+=========================================================================================================
+Install  1 Package (+1 Dependent package)
+
+Total download size: 24 k
+Installed size: 39 k
+Is this ok [y/d/N]: y
+Downloading packages:
+(1/2): centos-release-scl-rh-2-3.el7.centos.noarch.rpm                            |  12 kB  00:00:00     
+(2/2): centos-release-scl-2-3.el7.centos.noarch.rpm                               |  12 kB  00:00:00     
+---------------------------------------------------------------------------------------------------------
+Total                                                                     88 kB/s |  24 kB  00:00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : centos-release-scl-rh-2-3.el7.centos.noarch                                           1/2 
+  Installing : centos-release-scl-2-3.el7.centos.noarch                                              2/2 
+  Verifying  : centos-release-scl-2-3.el7.centos.noarch                                              1/2 
+  Verifying  : centos-release-scl-rh-2-3.el7.centos.noarch                                           2/2 
+
+Installed:
+  centos-release-scl.noarch 0:2-3.el7.centos                                                             
+
+Dependency Installed:
+  centos-release-scl-rh.noarch 0:2-3.el7.centos                                                          
+
+Complete!
+[user@localhost build]$ sudo yum install devtoolset-8
+Loaded plugins: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+ * base: mirror.pit.teraswitch.com
+ * centos-sclo-rh: mirrors.tripadvisor.com
+ * centos-sclo-sclo: mirror.pit.teraswitch.com
+ * epel: d2lzkl7pfhq30w.cloudfront.net
+ * extras: mirror.pit.teraswitch.com
+ * updates: mirror.pit.teraswitch.com
+http://mirrors.tripadvisor.com/centos/7.9.2009/sclo/x86_64/rh/repodata/repomd.xml: [Errno 12] Timeout on http://mirrors.tripadvisor.com/centos/7.9.2009/sclo/x86_64/rh/repodata/repomd.xml: (28, 'Operation too slow. Less than 1000 bytes/sec transferred the last 30 seconds')
+Trying other mirror.
+centos-sclo-rh                                                                    | 3.0 kB  00:00:00     
+centos-sclo-sclo                                                                  | 3.0 kB  00:00:00     
+(1/2): centos-sclo-sclo/x86_64/primary_db                                         | 300 kB  00:00:00     
+(2/2): centos-sclo-rh/x86_64/primary_db                                           | 3.3 MB  00:00:00     
+Resolving Dependencies
+--> Running transaction check
+---> Package devtoolset-8.x86_64 0:8.1-1.el7 will be installed
+--> Processing Dependency: devtoolset-8-perftools for package: devtoolset-8-8.1-1.el7.x86_64
+--> Processing Dependency: devtoolset-8-runtime for package: devtoolset-8-8.1-1.el7.x86_64
+--> Processing Dependency: devtoolset-8-toolchain for package: devtoolset-8-8.1-1.el7.x86_64
+--> Running transaction check
+---> Package devtoolset-8-perftools.x86_64 0:8.1-1.el7 will be installed
+--> Processing Dependency: devtoolset-8-oprofile for package: devtoolset-8-perftools-8.1-1.el7.x86_64
+--> Processing Dependency: devtoolset-8-systemtap for package: devtoolset-8-perftools-8.1-1.el7.x86_64
+--> Processing Dependency: devtoolset-8-valgrind for package: devtoolset-8-perftools-8.1-1.el7.x86_64
+--> Processing Dependency: devtoolset-8-dyninst for package: devtoolset-8-perftools-8.1-1.el7.x86_64
+---> Package devtoolset-8-runtime.x86_64 0:8.1-1.el7 will be installed
+---> Package devtoolset-8-toolchain.x86_64 0:8.1-1.el7 will be installed
+--> Processing Dependency: devtoolset-8-gcc for package: devtoolset-8-toolchain-8.1-1.el7.x86_64
+--> Processing Dependency: devtoolset-8-gcc-c++ for package: devtoolset-8-toolchain-8.1-1.el7.x86_64
+--> Processing Dependency: devtoolset-8-gcc-gfortran for package: devtoolset-8-toolchain-8.1-1.el7.x86_64
+--> Processing Dependency: devtoolset-8-binutils for package: devtoolset-8-toolchain-8.1-1.el7.x86_64
+--> Processing Dependency: devtoolset-8-gdb for package: devtoolset-8-toolchain-8.1-1.el7.x86_64
+--> Processing Dependency: devtoolset-8-strace for package: devtoolset-8-toolchain-8.1-1.el7.x86_64
+--> Processing Dependency: devtoolset-8-dwz for package: devtoolset-8-toolchain-8.1-1.el7.x86_64
+--> Processing Dependency: devtoolset-8-elfutils for package: devtoolset-8-toolchain-8.1-1.el7.x86_64
+--> Processing Dependency: devtoolset-8-memstomp for package: devtoolset-8-toolchain-8.1-1.el7.x86_64
+--> Processing Dependency: devtoolset-8-ltrace for package: devtoolset-8-toolchain-8.1-1.el7.x86_64
+--> Processing Dependency: devtoolset-8-make for package: devtoolset-8-toolchain-8.1-1.el7.x86_64
+--> Running transaction check
+---> Package devtoolset-8-binutils.x86_64 0:2.30-55.el7.2 will be installed
+---> Package devtoolset-8-dwz.x86_64 0:0.12-1.1.el7 will be installed
+---> Package devtoolset-8-dyninst.x86_64 0:9.3.2-6.el7 will be installed
+---> Package devtoolset-8-elfutils.x86_64 0:0.176-1.el7 will be installed
+--> Processing Dependency: devtoolset-8-elfutils-libelf(x86-64) = 0.176-1.el7 for package: devtoolset-8-elfutils-0.176-1.el7.x86_64
+--> Processing Dependency: devtoolset-8-elfutils-libs(x86-64) = 0.176-1.el7 for package: devtoolset-8-elfutils-0.176-1.el7.x86_64
+--> Processing Dependency: libasm.so.dts.1(ELFUTILS_1.0)(64bit) for package: devtoolset-8-elfutils-0.176-1.el7.x86_64
+--> Processing Dependency: libdw.so.dts.1(ELFUTILS_0.122)(64bit) for package: devtoolset-8-elfutils-0.176-1.el7.x86_64
+--> Processing Dependency: libdw.so.dts.1(ELFUTILS_0.126)(64bit) for package: devtoolset-8-elfutils-0.176-1.el7.x86_64
+--> Processing Dependency: libdw.so.dts.1(ELFUTILS_0.127)(64bit) for package: devtoolset-8-elfutils-0.176-1.el7.x86_64
+--> Processing Dependency: libdw.so.dts.1(ELFUTILS_0.130)(64bit) for package: devtoolset-8-elfutils-0.176-1.el7.x86_64
+--> Processing Dependency: libdw.so.dts.1(ELFUTILS_0.138)(64bit) for package: devtoolset-8-elfutils-0.176-1.el7.x86_64
+--> Processing Dependency: libdw.so.dts.1(ELFUTILS_0.143)(64bit) for package: devtoolset-8-elfutils-0.176-1.el7.x86_64
+--> Processing Dependency: libdw.so.dts.1(ELFUTILS_0.148)(64bit) for package: devtoolset-8-elfutils-0.176-1.el7.x86_64
+--> Processing Dependency: libdw.so.dts.1(ELFUTILS_0.149)(64bit) for package: devtoolset-8-elfutils-0.176-1.el7.x86_64
+--> Processing Dependency: libdw.so.dts.1(ELFUTILS_0.158)(64bit) for package: devtoolset-8-elfutils-0.176-1.el7.x86_64
+--> Processing Dependency: libdw.so.dts.1(ELFUTILS_0.159)(64bit) for package: devtoolset-8-elfutils-0.176-1.el7.x86_64
+--> Processing Dependency: libdw.so.dts.1(ELFUTILS_0.160)(64bit) for package: devtoolset-8-elfutils-0.176-1.el7.x86_64
+--> Processing Dependency: libdw.so.dts.1(ELFUTILS_0.161)(64bit) for package: devtoolset-8-elfutils-0.176-1.el7.x86_64
+--> Processing Dependency: libdw.so.dts.1(ELFUTILS_0.165)(64bit) for package: devtoolset-8-elfutils-0.176-1.el7.x86_64
+--> Processing Dependency: libdw.so.dts.1(ELFUTILS_0.167)(64bit) for package: devtoolset-8-elfutils-0.176-1.el7.x86_64
+--> Processing Dependency: libdw.so.dts.1(ELFUTILS_0.171)(64bit) for package: devtoolset-8-elfutils-0.176-1.el7.x86_64
+--> Processing Dependency: libdw.so.dts.1(ELFUTILS_0.173)(64bit) for package: devtoolset-8-elfutils-0.176-1.el7.x86_64
+--> Processing Dependency: libdw.so.dts.1(ELFUTILS_0.175)(64bit) for package: devtoolset-8-elfutils-0.176-1.el7.x86_64
+--> Processing Dependency: libelf.so.dts.1(ELFUTILS_1.0)(64bit) for package: devtoolset-8-elfutils-0.176-1.el7.x86_64
+--> Processing Dependency: libelf.so.dts.1(ELFUTILS_1.1)(64bit) for package: devtoolset-8-elfutils-0.176-1.el7.x86_64
+--> Processing Dependency: libelf.so.dts.1(ELFUTILS_1.1.1)(64bit) for package: devtoolset-8-elfutils-0.176-1.el7.x86_64
+--> Processing Dependency: libelf.so.dts.1(ELFUTILS_1.2)(64bit) for package: devtoolset-8-elfutils-0.176-1.el7.x86_64
+--> Processing Dependency: libelf.so.dts.1(ELFUTILS_1.3)(64bit) for package: devtoolset-8-elfutils-0.176-1.el7.x86_64
+--> Processing Dependency: libelf.so.dts.1(ELFUTILS_1.4)(64bit) for package: devtoolset-8-elfutils-0.176-1.el7.x86_64
+--> Processing Dependency: libelf.so.dts.1(ELFUTILS_1.5)(64bit) for package: devtoolset-8-elfutils-0.176-1.el7.x86_64
+--> Processing Dependency: libelf.so.dts.1(ELFUTILS_1.6)(64bit) for package: devtoolset-8-elfutils-0.176-1.el7.x86_64
+--> Processing Dependency: libelf.so.dts.1(ELFUTILS_1.7)(64bit) for package: devtoolset-8-elfutils-0.176-1.el7.x86_64
+--> Processing Dependency: libasm.so.dts.1()(64bit) for package: devtoolset-8-elfutils-0.176-1.el7.x86_64
+--> Processing Dependency: libdw.so.dts.1()(64bit) for package: devtoolset-8-elfutils-0.176-1.el7.x86_64
+--> Processing Dependency: libelf.so.dts.1()(64bit) for package: devtoolset-8-elfutils-0.176-1.el7.x86_64
+---> Package devtoolset-8-gcc.x86_64 0:8.3.1-3.2.el7 will be installed
+---> Package devtoolset-8-gcc-c++.x86_64 0:8.3.1-3.2.el7 will be installed
+--> Processing Dependency: devtoolset-8-libstdc++-devel = 8.3.1-3.2.el7 for package: devtoolset-8-gcc-c++-8.3.1-3.2.el7.x86_64
+---> Package devtoolset-8-gcc-gfortran.x86_64 0:8.3.1-3.2.el7 will be installed
+--> Processing Dependency: devtoolset-8-libquadmath-devel = 8.3.1-3.2.el7 for package: devtoolset-8-gcc-gfortran-8.3.1-3.2.el7.x86_64
+--> Processing Dependency: libgfortran5 >= 8.1.1 for package: devtoolset-8-gcc-gfortran-8.3.1-3.2.el7.x86_64
+---> Package devtoolset-8-gdb.x86_64 0:8.2-3.el7 will be installed
+---> Package devtoolset-8-ltrace.x86_64 0:0.7.91-1.el7 will be installed
+---> Package devtoolset-8-make.x86_64 1:4.2.1-4.el7 will be installed
+---> Package devtoolset-8-memstomp.x86_64 0:0.1.5-5.el7 will be installed
+---> Package devtoolset-8-oprofile.x86_64 0:1.3.0-2.el7 will be installed
+---> Package devtoolset-8-strace.x86_64 0:4.24-4.el7 will be installed
+---> Package devtoolset-8-systemtap.x86_64 0:3.3-2.el7 will be installed
+--> Processing Dependency: devtoolset-8-systemtap-client = 3.3-2.el7 for package: devtoolset-8-systemtap-3.3-2.el7.x86_64
+--> Processing Dependency: devtoolset-8-systemtap-devel = 3.3-2.el7 for package: devtoolset-8-systemtap-3.3-2.el7.x86_64
+---> Package devtoolset-8-valgrind.x86_64 1:3.14.0-16.el7 will be installed
+--> Running transaction check
+---> Package devtoolset-8-elfutils-libelf.x86_64 0:0.176-1.el7 will be installed
+---> Package devtoolset-8-elfutils-libs.x86_64 0:0.176-1.el7 will be installed
+---> Package devtoolset-8-libquadmath-devel.x86_64 0:8.3.1-3.2.el7 will be installed
+---> Package devtoolset-8-libstdc++-devel.x86_64 0:8.3.1-3.2.el7 will be installed
+---> Package devtoolset-8-systemtap-client.x86_64 0:3.3-2.el7 will be installed
+--> Processing Dependency: devtoolset-8-systemtap-runtime = 3.3-2.el7 for package: devtoolset-8-systemtap-client-3.3-2.el7.x86_64
+---> Package devtoolset-8-systemtap-devel.x86_64 0:3.3-2.el7 will be installed
+---> Package libgfortran5.x86_64 0:8.3.1-2.1.1.el7 will be installed
+--> Running transaction check
+---> Package devtoolset-8-systemtap-runtime.x86_64 0:3.3-2.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+=========================================================================================================
+ Package                               Arch          Version                 Repository             Size
+=========================================================================================================
+Installing:
+ devtoolset-8                          x86_64        8.1-1.el7               centos-sclo-rh        5.4 k
+Installing for dependencies:
+ devtoolset-8-binutils                 x86_64        2.30-55.el7.2           centos-sclo-rh        5.5 M
+ devtoolset-8-dwz                      x86_64        0.12-1.1.el7            centos-sclo-rh         98 k
+ devtoolset-8-dyninst                  x86_64        9.3.2-6.el7             centos-sclo-rh        3.6 M
+ devtoolset-8-elfutils                 x86_64        0.176-1.el7             centos-sclo-rh        431 k
+ devtoolset-8-elfutils-libelf          x86_64        0.176-1.el7             centos-sclo-rh        202 k
+ devtoolset-8-elfutils-libs            x86_64        0.176-1.el7             centos-sclo-rh        311 k
+ devtoolset-8-gcc                      x86_64        8.3.1-3.2.el7           centos-sclo-rh         30 M
+ devtoolset-8-gcc-c++                  x86_64        8.3.1-3.2.el7           centos-sclo-rh         12 M
+ devtoolset-8-gcc-gfortran             x86_64        8.3.1-3.2.el7           centos-sclo-rh         12 M
+ devtoolset-8-gdb                      x86_64        8.2-3.el7               centos-sclo-rh        3.4 M
+ devtoolset-8-libquadmath-devel        x86_64        8.3.1-3.2.el7           centos-sclo-rh        155 k
+ devtoolset-8-libstdc++-devel          x86_64        8.3.1-3.2.el7           centos-sclo-rh        2.7 M
+ devtoolset-8-ltrace                   x86_64        0.7.91-1.el7            centos-sclo-rh        148 k
+ devtoolset-8-make                     x86_64        1:4.2.1-4.el7           centos-sclo-rh        485 k
+ devtoolset-8-memstomp                 x86_64        0.1.5-5.el7             centos-sclo-rh        442 k
+ devtoolset-8-oprofile                 x86_64        1.3.0-2.el7             centos-sclo-rh        1.8 M
+ devtoolset-8-perftools                x86_64        8.1-1.el7               centos-sclo-rh        2.8 k
+ devtoolset-8-runtime                  x86_64        8.1-1.el7               centos-sclo-rh         20 k
+ devtoolset-8-strace                   x86_64        4.24-4.el7              centos-sclo-rh        1.0 M
+ devtoolset-8-systemtap                x86_64        3.3-2.el7               centos-sclo-rh        144 k
+ devtoolset-8-systemtap-client         x86_64        3.3-2.el7               centos-sclo-rh        2.8 M
+ devtoolset-8-systemtap-devel          x86_64        3.3-2.el7               centos-sclo-rh        2.2 M
+ devtoolset-8-systemtap-runtime        x86_64        3.3-2.el7               centos-sclo-rh        427 k
+ devtoolset-8-toolchain                x86_64        8.1-1.el7               centos-sclo-rh        3.0 k
+ devtoolset-8-valgrind                 x86_64        1:3.14.0-16.el7         centos-sclo-rh         11 M
+ libgfortran5                          x86_64        8.3.1-2.1.1.el7         base                  796 k
+
+Transaction Summary
+=========================================================================================================
+Install  1 Package (+26 Dependent packages)
+
+Total download size: 92 M
+Installed size: 270 M
+Is this ok [y/d/N]: y
+Downloading packages:
+warning: /var/cache/yum/x86_64/7/centos-sclo-rh/packages/devtoolset-8-8.1-1.el7.x86_64.rpm: Header V4 RSA/SHA1 Signature, key ID f2ee9d55: NOKEY
+Public key for devtoolset-8-8.1-1.el7.x86_64.rpm is not installed
+(1/27): devtoolset-8-8.1-1.el7.x86_64.rpm                                         | 5.4 kB  00:00:00     
+(2/27): devtoolset-8-dwz-0.12-1.1.el7.x86_64.rpm                                  |  98 kB  00:00:00     
+(3/27): devtoolset-8-binutils-2.30-55.el7.2.x86_64.rpm                            | 5.5 MB  00:00:00     
+(4/27): devtoolset-8-dyninst-9.3.2-6.el7.x86_64.rpm                               | 3.6 MB  00:00:00     
+(5/27): devtoolset-8-elfutils-libelf-0.176-1.el7.x86_64.rpm                       | 202 kB  00:00:00     
+(6/27): devtoolset-8-elfutils-0.176-1.el7.x86_64.rpm                              | 431 kB  00:00:00     
+(7/27): devtoolset-8-elfutils-libs-0.176-1.el7.x86_64.rpm                         | 311 kB  00:00:00     
+(8/27): devtoolset-8-gcc-c++-8.3.1-3.2.el7.x86_64.rpm                             |  12 MB  00:00:01     
+(9/27): devtoolset-8-gcc-gfortran-8.3.1-3.2.el7.x86_64.rpm                        |  12 MB  00:00:01     
+(10/27): devtoolset-8-gdb-8.2-3.el7.x86_64.rpm                                    | 3.4 MB  00:00:00     
+(11/27): devtoolset-8-libquadmath-devel-8.3.1-3.2.el7.x86_64.rpm                  | 155 kB  00:00:00     
+(12/27): devtoolset-8-gcc-8.3.1-3.2.el7.x86_64.rpm                                |  30 MB  00:00:03     
+(13/27): devtoolset-8-ltrace-0.7.91-1.el7.x86_64.rpm                              | 148 kB  00:00:00     
+(14/27): devtoolset-8-libstdc++-devel-8.3.1-3.2.el7.x86_64.rpm                    | 2.7 MB  00:00:00     
+(15/27): devtoolset-8-make-4.2.1-4.el7.x86_64.rpm                                 | 485 kB  00:00:00     
+(16/27): devtoolset-8-memstomp-0.1.5-5.el7.x86_64.rpm                             | 442 kB  00:00:00     
+(17/27): devtoolset-8-perftools-8.1-1.el7.x86_64.rpm                              | 2.8 kB  00:00:00     
+(18/27): devtoolset-8-runtime-8.1-1.el7.x86_64.rpm                                |  20 kB  00:00:00     
+(19/27): devtoolset-8-oprofile-1.3.0-2.el7.x86_64.rpm                             | 1.8 MB  00:00:00     
+(20/27): devtoolset-8-strace-4.24-4.el7.x86_64.rpm                                | 1.0 MB  00:00:00     
+(21/27): devtoolset-8-systemtap-3.3-2.el7.x86_64.rpm                              | 144 kB  00:00:00     
+(22/27): devtoolset-8-systemtap-client-3.3-2.el7.x86_64.rpm                       | 2.8 MB  00:00:00     
+(23/27): devtoolset-8-systemtap-devel-3.3-2.el7.x86_64.rpm                        | 2.2 MB  00:00:00     
+(24/27): devtoolset-8-toolchain-8.1-1.el7.x86_64.rpm                              | 3.0 kB  00:00:00     
+(25/27): devtoolset-8-systemtap-runtime-3.3-2.el7.x86_64.rpm                      | 427 kB  00:00:00     
+(26/27): devtoolset-8-valgrind-3.14.0-16.el7.x86_64.rpm                           |  11 MB  00:00:00     
+(27/27): libgfortran5-8.3.1-2.1.1.el7.x86_64.rpm                                  | 796 kB  00:00:01     
+---------------------------------------------------------------------------------------------------------
+Total                                                                     16 MB/s |  92 MB  00:00:05     
+Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
+Importing GPG key 0xF2EE9D55:
+ Userid     : "CentOS SoftwareCollections SIG (https://wiki.centos.org/SpecialInterestGroup/SCLo) <security@centos.org>"
+ Fingerprint: c4db d535 b1fb ba14 f8ba 64a8 4eb8 4e71 f2ee 9d55
+ Package    : centos-release-scl-rh-2-3.el7.centos.noarch (@extras)
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
+Is this ok [y/N]: y
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : devtoolset-8-runtime-8.1-1.el7.x86_64                                                1/27 
+  Installing : devtoolset-8-elfutils-libelf-0.176-1.el7.x86_64                                      2/27 
+  Installing : devtoolset-8-systemtap-devel-3.3-2.el7.x86_64                                        3/27 
+  Installing : devtoolset-8-binutils-2.30-55.el7.2.x86_64                                           4/27 
+  Installing : devtoolset-8-dyninst-9.3.2-6.el7.x86_64                                              5/27 
+  Installing : devtoolset-8-systemtap-runtime-3.3-2.el7.x86_64                                      6/27 
+  Installing : devtoolset-8-systemtap-client-3.3-2.el7.x86_64                                       7/27 
+  Installing : devtoolset-8-systemtap-3.3-2.el7.x86_64                                              8/27 
+  Installing : devtoolset-8-elfutils-libs-0.176-1.el7.x86_64                                        9/27 
+  Installing : devtoolset-8-elfutils-0.176-1.el7.x86_64                                            10/27 
+  Installing : devtoolset-8-strace-4.24-4.el7.x86_64                                               11/27 
+  Installing : devtoolset-8-libstdc++-devel-8.3.1-3.2.el7.x86_64                                   12/27 
+  Installing : devtoolset-8-gdb-8.2-3.el7.x86_64                                                   13/27 
+  Installing : 1:devtoolset-8-valgrind-3.14.0-16.el7.x86_64                                        14/27 
+  Installing : devtoolset-8-oprofile-1.3.0-2.el7.x86_64                                            15/27 
+  Installing : devtoolset-8-perftools-8.1-1.el7.x86_64                                             16/27 
+  Installing : devtoolset-8-memstomp-0.1.5-5.el7.x86_64                                            17/27 
+  Installing : devtoolset-8-ltrace-0.7.91-1.el7.x86_64                                             18/27 
+  Installing : devtoolset-8-dwz-0.12-1.1.el7.x86_64                                                19/27 
+  Installing : 1:devtoolset-8-make-4.2.1-4.el7.x86_64                                              20/27 
+  Installing : libgfortran5-8.3.1-2.1.1.el7.x86_64                                                 21/27 
+  Installing : devtoolset-8-gcc-8.3.1-3.2.el7.x86_64                                               22/27 
+  Installing : devtoolset-8-gcc-c++-8.3.1-3.2.el7.x86_64                                           23/27 
+  Installing : devtoolset-8-libquadmath-devel-8.3.1-3.2.el7.x86_64                                 24/27 
+  Installing : devtoolset-8-gcc-gfortran-8.3.1-3.2.el7.x86_64                                      25/27 
+  Installing : devtoolset-8-toolchain-8.1-1.el7.x86_64                                             26/27 
+  Installing : devtoolset-8-8.1-1.el7.x86_64                                                       27/27 
+  Verifying  : devtoolset-8-toolchain-8.1-1.el7.x86_64                                              1/27 
+  Verifying  : devtoolset-8-elfutils-libs-0.176-1.el7.x86_64                                        2/27 
+  Verifying  : devtoolset-8-strace-4.24-4.el7.x86_64                                                3/27 
+  Verifying  : devtoolset-8-elfutils-0.176-1.el7.x86_64                                             4/27 
+  Verifying  : devtoolset-8-gcc-c++-8.3.1-3.2.el7.x86_64                                            5/27 
+  Verifying  : devtoolset-8-elfutils-libelf-0.176-1.el7.x86_64                                      6/27 
+  Verifying  : devtoolset-8-libstdc++-devel-8.3.1-3.2.el7.x86_64                                    7/27 
+  Verifying  : devtoolset-8-runtime-8.1-1.el7.x86_64                                                8/27 
+  Verifying  : devtoolset-8-gdb-8.2-3.el7.x86_64                                                    9/27 
+  Verifying  : devtoolset-8-gcc-8.3.1-3.2.el7.x86_64                                               10/27 
+  Verifying  : devtoolset-8-perftools-8.1-1.el7.x86_64                                             11/27 
+  Verifying  : 1:devtoolset-8-valgrind-3.14.0-16.el7.x86_64                                        12/27 
+  Verifying  : devtoolset-8-systemtap-3.3-2.el7.x86_64                                             13/27 
+  Verifying  : devtoolset-8-oprofile-1.3.0-2.el7.x86_64                                            14/27 
+  Verifying  : devtoolset-8-systemtap-runtime-3.3-2.el7.x86_64                                     15/27 
+  Verifying  : devtoolset-8-8.1-1.el7.x86_64                                                       16/27 
+  Verifying  : devtoolset-8-systemtap-devel-3.3-2.el7.x86_64                                       17/27 
+  Verifying  : devtoolset-8-binutils-2.30-55.el7.2.x86_64                                          18/27 
+  Verifying  : devtoolset-8-systemtap-client-3.3-2.el7.x86_64                                      19/27 
+  Verifying  : devtoolset-8-memstomp-0.1.5-5.el7.x86_64                                            20/27 
+  Verifying  : libgfortran5-8.3.1-2.1.1.el7.x86_64                                                 21/27 
+  Verifying  : devtoolset-8-ltrace-0.7.91-1.el7.x86_64                                             22/27 
+  Verifying  : devtoolset-8-gcc-gfortran-8.3.1-3.2.el7.x86_64                                      23/27 
+  Verifying  : devtoolset-8-libquadmath-devel-8.3.1-3.2.el7.x86_64                                 24/27 
+  Verifying  : devtoolset-8-dyninst-9.3.2-6.el7.x86_64                                             25/27 
+  Verifying  : devtoolset-8-dwz-0.12-1.1.el7.x86_64                                                26/27 
+  Verifying  : 1:devtoolset-8-make-4.2.1-4.el7.x86_64                                              27/27 
+
+Installed:
+  devtoolset-8.x86_64 0:8.1-1.el7                                                                        
+
+Dependency Installed:
+  devtoolset-8-binutils.x86_64 0:2.30-55.el7.2                                                           
+  devtoolset-8-dwz.x86_64 0:0.12-1.1.el7                                                                 
+  devtoolset-8-dyninst.x86_64 0:9.3.2-6.el7                                                              
+  devtoolset-8-elfutils.x86_64 0:0.176-1.el7                                                             
+  devtoolset-8-elfutils-libelf.x86_64 0:0.176-1.el7                                                      
+  devtoolset-8-elfutils-libs.x86_64 0:0.176-1.el7                                                        
+  devtoolset-8-gcc.x86_64 0:8.3.1-3.2.el7                                                                
+  devtoolset-8-gcc-c++.x86_64 0:8.3.1-3.2.el7                                                            
+  devtoolset-8-gcc-gfortran.x86_64 0:8.3.1-3.2.el7                                                       
+  devtoolset-8-gdb.x86_64 0:8.2-3.el7                                                                    
+  devtoolset-8-libquadmath-devel.x86_64 0:8.3.1-3.2.el7                                                  
+  devtoolset-8-libstdc++-devel.x86_64 0:8.3.1-3.2.el7                                                    
+  devtoolset-8-ltrace.x86_64 0:0.7.91-1.el7                                                              
+  devtoolset-8-make.x86_64 1:4.2.1-4.el7                                                                 
+  devtoolset-8-memstomp.x86_64 0:0.1.5-5.el7                                                             
+  devtoolset-8-oprofile.x86_64 0:1.3.0-2.el7                                                             
+  devtoolset-8-perftools.x86_64 0:8.1-1.el7                                                              
+  devtoolset-8-runtime.x86_64 0:8.1-1.el7                                                                
+  devtoolset-8-strace.x86_64 0:4.24-4.el7                                                                
+  devtoolset-8-systemtap.x86_64 0:3.3-2.el7                                                              
+  devtoolset-8-systemtap-client.x86_64 0:3.3-2.el7                                                       
+  devtoolset-8-systemtap-devel.x86_64 0:3.3-2.el7                                                        
+  devtoolset-8-systemtap-runtime.x86_64 0:3.3-2.el7                                                      
+  devtoolset-8-toolchain.x86_64 0:8.1-1.el7                                                              
+  devtoolset-8-valgrind.x86_64 1:3.14.0-16.el7                                                           
+  libgfortran5.x86_64 0:8.3.1-2.1.1.el7                                                                  
+
+Complete!
+[user@localhost build]$ gcc -v
+Using built-in specs.
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper
+Target: x86_64-redhat-linux
+Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
+Thread model: posix
+gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) 
+[user@localhost build]$ scl enalbe devtoolset-8 bash
+warning: /opt/rh/devtoolset-8//enalbe scriptlet does not exist!
+[user@localhost build]$ gcc -v
+Using built-in specs.
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper
+Target: x86_64-redhat-linux
+Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
+Thread model: posix
+gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) 
+[user@localhost build]$ sudo yum install centos-release-scl
+[sudo] password for user: 
+Loaded plugins: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+ * base: mirror.pit.teraswitch.com
+ * centos-sclo-rh: mirror.metrocast.net
+ * centos-sclo-sclo: mirror.pit.teraswitch.com
+ * epel: linux-mirrors.fnal.gov
+ * extras: mirror.pit.teraswitch.com
+ * updates: mirror.pit.teraswitch.com
+Package centos-release-scl-2-3.el7.centos.noarch already installed and latest version
+Nothing to do
+[user@localhost build]$ sudo yum install devtoolset-8-gcc*
+Loaded plugins: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+ * base: mirror.pit.teraswitch.com
+ * centos-sclo-rh: mirror.ette.biz
+ * centos-sclo-sclo: www.gtlib.gatech.edu
+ * epel: d2lzkl7pfhq30w.cloudfront.net
+ * extras: mirror.pit.teraswitch.com
+ * updates: mirror.pit.teraswitch.com
+Package devtoolset-8-gcc-gfortran-8.3.1-3.2.el7.x86_64 already installed and latest version
+Package devtoolset-8-gcc-8.3.1-3.2.el7.x86_64 already installed and latest version
+Package devtoolset-8-gcc-c++-8.3.1-3.2.el7.x86_64 already installed and latest version
+Resolving Dependencies
+--> Running transaction check
+---> Package devtoolset-8-gcc-gdb-plugin.x86_64 0:8.3.1-3.2.el7 will be installed
+---> Package devtoolset-8-gcc-plugin-devel.x86_64 0:8.3.1-3.2.el7 will be installed
+--> Processing Dependency: gmp-devel >= 4.1.2-8 for package: devtoolset-8-gcc-plugin-devel-8.3.1-3.2.el7.x86_64
+--> Processing Dependency: libmpc-devel >= 0.8.1 for package: devtoolset-8-gcc-plugin-devel-8.3.1-3.2.el7.x86_64
+--> Processing Dependency: mpfr-devel >= 2.2.1 for package: devtoolset-8-gcc-plugin-devel-8.3.1-3.2.el7.x86_64
+--> Running transaction check
+---> Package gmp-devel.x86_64 1:6.0.0-15.el7 will be installed
+---> Package libmpc-devel.x86_64 0:1.0.1-3.el7 will be installed
+---> Package mpfr-devel.x86_64 0:3.1.1-4.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+=========================================================================================================
+ Package                              Arch          Version                  Repository             Size
+=========================================================================================================
+Installing:
+ devtoolset-8-gcc-gdb-plugin          x86_64        8.3.1-3.2.el7            centos-sclo-rh        123 k
+ devtoolset-8-gcc-plugin-devel        x86_64        8.3.1-3.2.el7            centos-sclo-rh        1.4 M
+Installing for dependencies:
+ gmp-devel                            x86_64        1:6.0.0-15.el7           base                  181 k
+ libmpc-devel                         x86_64        1.0.1-3.el7              base                   32 k
+ mpfr-devel                           x86_64        3.1.1-4.el7              base                   68 k
+
+Transaction Summary
+=========================================================================================================
+Install  2 Packages (+3 Dependent packages)
+
+Total download size: 1.8 M
+Installed size: 8.6 M
+Is this ok [y/d/N]: y
+Downloading packages:
+(1/5): libmpc-devel-1.0.1-3.el7.x86_64.rpm                                        |  32 kB  00:00:00     
+(2/5): mpfr-devel-3.1.1-4.el7.x86_64.rpm                                          |  68 kB  00:00:00     
+(3/5): devtoolset-8-gcc-gdb-plugin-8.3.1-3.2.el7.x86_64.rpm                       | 123 kB  00:00:00     
+(4/5): gmp-devel-6.0.0-15.el7.x86_64.rpm                                          | 181 kB  00:00:00     
+(5/5): devtoolset-8-gcc-plugin-devel-8.3.1-3.2.el7.x86_64.rpm                     | 1.4 MB  00:00:00     
+---------------------------------------------------------------------------------------------------------
+Total                                                                    3.9 MB/s | 1.8 MB  00:00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : 1:gmp-devel-6.0.0-15.el7.x86_64                                                       1/5 
+  Installing : mpfr-devel-3.1.1-4.el7.x86_64                                                         2/5 
+  Installing : libmpc-devel-1.0.1-3.el7.x86_64                                                       3/5 
+  Installing : devtoolset-8-gcc-plugin-devel-8.3.1-3.2.el7.x86_64                                    4/5 
+  Installing : devtoolset-8-gcc-gdb-plugin-8.3.1-3.2.el7.x86_64                                      5/5 
+  Verifying  : libmpc-devel-1.0.1-3.el7.x86_64                                                       1/5 
+  Verifying  : 1:gmp-devel-6.0.0-15.el7.x86_64                                                       2/5 
+  Verifying  : mpfr-devel-3.1.1-4.el7.x86_64                                                         3/5 
+  Verifying  : devtoolset-8-gcc-plugin-devel-8.3.1-3.2.el7.x86_64                                    4/5 
+  Verifying  : devtoolset-8-gcc-gdb-plugin-8.3.1-3.2.el7.x86_64                                      5/5 
+
+Installed:
+  devtoolset-8-gcc-gdb-plugin.x86_64 0:8.3.1-3.2.el7                                                     
+  devtoolset-8-gcc-plugin-devel.x86_64 0:8.3.1-3.2.el7                                                   
+
+Dependency Installed:
+  gmp-devel.x86_64 1:6.0.0-15.el7   libmpc-devel.x86_64 0:1.0.1-3.el7   mpfr-devel.x86_64 0:3.1.1-4.el7  
+
+Complete!
+[user@localhost build]$ scl enable devtoolset-8 bash
+[user@localhost build]$ gcc -v
+Using built-in specs.
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper
+Target: x86_64-redhat-linux
+Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,lto --prefix=/opt/rh/devtoolset-8/root/usr --mandir=/opt/rh/devtoolset-8/root/usr/share/man --infodir=/opt/rh/devtoolset-8/root/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --with-default-libstdcxx-abi=gcc4-compatible --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-8.3.1-20190311/obj-x86_64-redhat-linux/isl-install --disable-libmpx --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
+Thread model: posix
+gcc version 8.3.1 20190311 (Red Hat 8.3.1-3) (GCC) 
+[user@localhost build]$ echo $PATH
+/opt/rh/devtoolset-8/root/usr/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/home/user/.local/bin:/home/user/bin
+[user@localhost build]$ export C_INCLUDE_PATH=$HOME/my-root/include
+[user@localhost build]$ export CPLUS_INCLUDE_PATH=$HOME/my-root/include
+[user@localhost build]$ export LIBRARY_PATH=$HOME/my-root/lib
+[user@localhost build]$ ll
+total 0
+[user@localhost build]$ cmake3 -DCMAKE_INSTALL_PREFIX=/home/user/my-root ..
+-- The CXX compiler identification is GNU 8.3.1
+-- Check for working CXX compiler: /opt/rh/devtoolset-8/root/usr/bin/c++
+-- Check for working CXX compiler: /opt/rh/devtoolset-8/root/usr/bin/c++ - works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.27.1") 
+-- Found FFTW: /usr/lib64/libfftw3f.so  
+CMake Warning (dev) at /usr/share/cmake3/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (LIQUID)
+  does not match the name of the calling package (Liquid).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  cmake/Modules/FindLiquid.cmake:20 (find_package_handle_standard_args)
+  src/CMakeLists.txt:58 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found LIQUID: /home/user/my-root/lib/libliquid.so  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/user/inspectrum/build
+[user@localhost build]$ make
+Scanning dependencies of target inspectrum_autogen
+[  4%] Automatic MOC for target inspectrum
+[  4%] Built target inspectrum_autogen
+Scanning dependencies of target inspectrum
+[  8%] Building CXX object src/CMakeFiles/inspectrum.dir/inspectrum_autogen/mocs_compilation.cpp.o
+[ 12%] Building CXX object src/CMakeFiles/inspectrum.dir/abstractsamplesource.cpp.o
+[ 16%] Building CXX object src/CMakeFiles/inspectrum.dir/amplitudedemod.cpp.o
+[ 20%] Building CXX object src/CMakeFiles/inspectrum.dir/cursor.cpp.o
+[ 24%] Building CXX object src/CMakeFiles/inspectrum.dir/cursors.cpp.o
+[ 28%] Building CXX object src/CMakeFiles/inspectrum.dir/main.cpp.o
+[ 32%] Building CXX object src/CMakeFiles/inspectrum.dir/fft.cpp.o
+[ 36%] Building CXX object src/CMakeFiles/inspectrum.dir/frequencydemod.cpp.o
+[ 40%] Building CXX object src/CMakeFiles/inspectrum.dir/mainwindow.cpp.o
+[ 44%] Building CXX object src/CMakeFiles/inspectrum.dir/inputsource.cpp.o
+[ 48%] Building CXX object src/CMakeFiles/inspectrum.dir/phasedemod.cpp.o
+[ 52%] Building CXX object src/CMakeFiles/inspectrum.dir/plot.cpp.o
+[ 56%] Building CXX object src/CMakeFiles/inspectrum.dir/plots.cpp.o
+[ 60%] Building CXX object src/CMakeFiles/inspectrum.dir/plotview.cpp.o
+[ 64%] Building CXX object src/CMakeFiles/inspectrum.dir/samplebuffer.cpp.o
+[ 68%] Building CXX object src/CMakeFiles/inspectrum.dir/samplesource.cpp.o
+[ 72%] Building CXX object src/CMakeFiles/inspectrum.dir/spectrogramcontrols.cpp.o
+[ 76%] Building CXX object src/CMakeFiles/inspectrum.dir/spectrogramplot.cpp.o
+[ 80%] Building CXX object src/CMakeFiles/inspectrum.dir/threshold.cpp.o
+[ 84%] Building CXX object src/CMakeFiles/inspectrum.dir/traceplot.cpp.o
+[ 88%] Building CXX object src/CMakeFiles/inspectrum.dir/tuner.cpp.o
+[ 92%] Building CXX object src/CMakeFiles/inspectrum.dir/tunertransform.cpp.o
+[ 96%] Building CXX object src/CMakeFiles/inspectrum.dir/util.cpp.o
+[100%] Linking CXX executable inspectrum
+[100%] Built target inspectrum
+[user@localhost build]$ make install
+[  4%] Automatic MOC for target inspectrum
+[  4%] Built target inspectrum_autogen
+[100%] Built target inspectrum
+Install the project...
+-- Install configuration: ""
+-- Installing: /home/user/my-root/bin/inspectrum
+[user@localhost build]$ history
+    1  gcc
+    2  yum grouplist
+    3  yum groupinfo "development tools"
+    4  yum groupinstall -y "Development tools"
+    5  yum groupinstall "development tools"
+    6  sudo yum groupinstall "development tools"
+    7  su
+    8  history
+    9  sudo yum groupinstall "development tools"
+   10  id user
+   11  visudo
+   12  sudo visudo
+   13  su
+   14  gcc -v
+   15  echo $PATH
+   16  export C_INCLUDE_PATH=$HOME/my-root/include
+   17  export CPLUS_INCLUDE_PATH=$HOME/my-root/include
+   18  export LIBRARY_PATH=$HOME/my-root/lib
+   19  ll
+   20  cmake3 -DCMAKE_INSTALL_PREFIX=/home/user/my-root ..
+   21  make
+   22  make install
+   23  history
+[user@localhost build]$ 
+
